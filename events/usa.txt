@@ -1,0 +1,83 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = american_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = usa
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = USA_trump_2016
+		x = 20
+		y = 1
+		icon = GFX_focus_USA_trump_2016
+		cost = 1
+		available = {
+			has_country_leader = {
+				character = USA_trump
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_america_first
+		x = -8
+		y = 2
+		icon = GFX_focus_USA_america_first
+		cost = 10
+		relative_position_id = USA_trump_2016
+		prerequisite = {focus = USA_trump_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = PER
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = IRQ
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = LBA
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = SOM
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = SUD
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = SYR
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = YEM
+				modifier = USA_travel_ban
+			}
+		}
+	}
+}
