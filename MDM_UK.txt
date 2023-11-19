@@ -1,0 +1,221 @@
+﻿###########################
+# UK Events
+###########################
+
+add_namespace = uk_scot_crisis
+
+country_event = {
+	id = uk_scot_crisis.1
+	title = uk_scot_crisis.1.t
+	desc = uk_scot_crisis.1.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = { years = 1 }
+	
+	trigger = {
+		tag = ENG
+		ENG = {
+			owns_state = 120
+			owns_state = 136
+			owns_state = 133
+			owns_state = 121
+		}
+		NOT = {country_exists = SCO}
+	}
+	option = { #Never!
+		name = uk_scot_crisis.1.a
+		
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 25
+		}
+			set_country_flag = scots_mad
+			custom_effect_tooltip = uk_scots_mad_tt
+			add_political_power = 50
+	}
+	option = { #We can't risk the end of the UK!
+		name = uk_scot_crisis.1.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 60
+		}
+		set_country_flag = scots_appeased
+		custom_effect_tooltip = uk_scots_happy_tt
+		add_political_power = -100
+	}
+	option = { #Make them a subject!
+		name = uk_scot_crisis.1.c
+		trigger = {
+			NOT = {
+				SCO = {
+					is_subject_of = ENG
+				}
+			}
+		}
+		ai_chance = {
+			base = 14
+		}
+		set_country_flag = scots_subject
+		release_puppet = SCO
+		custom_effect_tooltip = uk_scots_sub_tt
+	}
+	option = { #Release them!Their independence is a right!
+		name = uk_scot_crisis.1.d
+		trigger = {
+			NOT = {
+				country_exists = SCO
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = scots_independence
+		release = SCO
+		remove_state_core = 120
+		remove_state_core = 121
+		remove_state_core = 133
+		remove_state_core = 136
+	}
+}
+
+country_event = {
+	id = uk_scot_crisis.2
+	title = uk_scot_crisis.2.t
+	desc = uk_scot_crisis.2.desc
+	picture = GFX_news_event_worker_protests_2
+	fire_only_once = yes
+	mean_time_to_happen = { months = 10 }
+	
+	trigger = {
+		has_country_flag = scots_mad
+	}
+	
+	option = { #We accept their independence
+		name = uk_scot_crisis.2.a 
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = scots_independence
+		release = SCO
+		remove_state_core = 120
+		remove_state_core = 121
+		remove_state_core = 133
+		remove_state_core = 136
+		clr_country_flag = scots_mad
+		add_political_power = -200
+	}
+	option = { #Death to traitors!
+		name = uk_scot_crisis.2.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		release = SCO
+		set_country_flag = SCO_wars
+		declare_war_on = {
+			target = SCO
+			type = annex_everything
+		}
+		SCO = {
+			create_faction = FRONT_FOR_FREEDOM
+		}
+	}
+	option = { #I'll help them!
+		name = uk_scot_crisis.2.c
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 0
+		}
+		release = SCO
+		set_country_flag = SCO_wars
+		declare_war_on = {
+			target = SCO
+			type = annex_everything
+		}
+		SCO = { change_tag_from = ENG }
+	}
+}
+country_event = {
+	id = uk_scot_crisis.3
+	title = uk_scot_crisis.3.t
+	desc = uk_scot_crisis.3.desc
+	picture = GFX_news_event_worker_protests_2
+	fire_only_once = yes
+	mean_time_to_happen = { months = 2 }
+	
+	trigger = {
+		has_country_flag = SCO_wars
+		ENG = {
+			owns_state = 122
+		}
+	}
+	option = { #The Welsh declare independence!
+		name = uk_scot_crisis.3.a
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = wales_war
+		release = WAL
+		declare_war_on = {
+			target = WAL
+			type = annex_everything
+		}
+			SCO = { add_to_faction = WAL }
+	}
+}
+country_event = {
+	id = uk_scot_crisis.4
+	title = uk_scot_crisis.4.t
+	desc = uk_scot_crisis.4.desc
+	picture = GFX_news_event_generic_army
+	fire_only_once = yes
+	mean_time_to_happen = { months = 2 }
+	
+	trigger = {
+		tag = IRE
+		ENG = {
+			owns_state = 119
+			has_country_flag = SCO_wars
+			has_country_flag = wales_war
+		}
+	}
+	option = { #Back down!
+		name = uk_scot_crisis.4.a
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 70
+		}
+	}
+	option = { #Don't mind if I do!
+		name = uk_scot_crisis.4.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 30
+		}
+		set_country_flag = irish_at_war
+		set_state_controller = 119
+		declare_war_on = {
+			target = ENG
+			type = take_core_state
+		}
+			SCO = { add_to_faction = IRE }
+	}
+}

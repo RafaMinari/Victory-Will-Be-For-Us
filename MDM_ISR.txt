@@ -1,0 +1,39 @@
+﻿###########################
+# Israel Events
+###########################
+
+add_namespace = isr_gaza_war
+
+
+country_event = {
+	id = isr_gaza_war.1
+	title = isr_gaza_war.1.t
+	desc = isr_gaza_war.1.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 8
+	}
+	
+	trigger = {
+		tag = ISR
+		NOT =  {has_war_with = PAL}
+	}
+	option = { #It is war then
+		name = isr_gaza_war.1.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		declare_war_on = {
+			target = PAL
+			type = annex_everything
+		}
+		set_country_flag = gaza_war
+	}
+	
+	
+}

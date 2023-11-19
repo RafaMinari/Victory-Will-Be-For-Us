@@ -1,0 +1,302 @@
+﻿###########################
+# USA Events
+###########################
+
+add_namespace = usa_primaries_2016
+add_namespace = usa_elections
+add_namespace = usa_coup
+
+country_event = {
+	id = usa_primaries_2016.1
+	title = usa_primaries_2016.1.t
+	desc = usa_primaries_2016.1.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	trigger = {
+		tag = USA
+		date > 2016.1.1
+	}
+	immediate = {
+		set_country_flag = demo_settled_2016
+	}
+	option = { #Hillary Clinton
+		name = usa_primaries_2016.1.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+			set_country_flag = usa_hillary_clinton_2016
+	}
+	option = { #Bernie Sanders
+		name = usa_primaries_2016.1.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = usa_bernie_sanders_2016
+		
+		
+	}
+	
+}
+country_event = {
+	id = usa_primaries_2016.2
+	title = usa_primaries_2016.2.t
+	desc = usa_primaries_2016.2.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	trigger = {
+		tag = USA
+		date > 2016.1.1
+	}
+	immediate = {
+		set_country_flag = rep_settled_2016
+	}
+	option = { #Trump
+		name = usa_primaries_2016.2.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = usa_trump_2016
+	}
+	option = { #Ted Cruz
+		name = usa_primaries_2016.2.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = usa_ted_cruz_2016
+		
+		
+	}
+	
+}
+country_event = {
+	id = usa_elections.1
+	title = usa_elections.1.t
+	desc = usa_primaries_2016.1.desc
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2016.1.1
+		has_country_flag = rep_settled_2016
+		has_country_flag = demo_settled_2016
+	}
+	option = { #Trump
+		name = usa_elections.1.a
+
+		trigger = {
+			set_country_flag = usa_trump_2016
+		}
+		ai_chance = {
+			base = 25
+		}
+		add_country_leader_role = {
+			character = USA_trump
+			promote_leader = yes
+			country_leader = {
+				ideology = fascism_type
+				expire = "1965.1.1.1"
+				traits = { war_industrialist }
+			}
+		}
+		complete_national_focus = USA_trump_2016
+	}
+	option = { #Ted Cruz
+		name = usa_elections.1.b
+		trigger = {
+			set_country_flag = usa_ted_cruz_2016	
+		}
+		ai_chance = {
+			base = 25
+		}
+			
+	}
+	option = { #Hillary
+		name = usa_elections.1.b
+		trigger = {
+			usa_hillary_clinton_2016
+		}
+		ai_chance = {
+			base = 25
+		}
+		
+	}
+	option = { #Bernie
+		name = usa_elections.1.b
+		trigger = {
+			set_country_flag = usa_bernie_sanders_2016
+		}
+		ai_chance = {
+			base = 25
+		}
+		
+	}
+	
+}
+country_event = {
+	id = usa_coup.1
+	title = usa_coup.1.t
+	desc = usa_coup.1.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = {
+		weeks = 1
+	}
+	trigger = {
+		tag = USA
+		ISR = {has_country_flag = gaza_war}
+	}
+	option = { #To arms!
+		name = usa_coup.1.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 10
+		}
+		add_to_war = {
+			targeted_alliance = ISR
+			enemy = PAL
+		}
+		set_country_flag = usa_in_gaza
+	}
+	option = { #Send aid
+		name = usa_coup.1.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 45
+		}
+		set_country_flag = usa_isr_aid
+		add_manpower = -1000
+		 add_political_power = -100
+		
+	}
+	option = { #They can deal with it
+		name = usa_coup.1.c
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 45
+		}
+		set_country_flag = usa_isr_ignore
+		
+	}
+}
+country_event = {
+	id = usa_coup.2
+	title = usa_coup.2.t
+	desc = usa_coup.2.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 2
+	}
+	trigger = {
+		tag = USA
+		has_country_flag = usa_in_gaza
+	}
+	option = { #This war is not ours. Let's plan The Revolution! 
+		name = usa_coup.2.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = usa_coup_near
+		custom_effect_tooltip = usa_coup_prep
+	}
+	option = { #If it's for the good of the nation, we will end the war.
+		name = usa_coup.2.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = usa_no_coup
+		white_peace = PAL
+		
+	}
+	
+}
+country_event = {
+	id = usa_coup.3
+	title = usa_coup.3.t
+	desc = usa_coup.3.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+		tag = USA
+		has_country_flag = usa_coup_near
+	}
+	option = { #The Atomwaffen shall lead the coalition
+		name = usa_coup.3.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 30
+		}
+		set_country_flag = usa_attomwaffen
+		custom_effect_tooltip = usa_attomwaffen
+	}
+	option = { #The KKK is the pathway for victory
+		name = usa_coup.3.b
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 30
+		}
+		set_country_flag = usa_kkk
+		custom_effect_tooltip = usa_kkk
+		
+	}
+	option = { #A more moderate party must control the coalition
+		name = usa_coup.3.c
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = usa_gosar
+		custom_effect_tooltip = usa_gosar
+		
+	}
+	
+}
+
+
