@@ -1,0 +1,33 @@
+﻿l_english:
+ #BRAZIL
+ BRA_dilma:0 "Dilma Vana Rousseff"
+ BRA_lula:0 "Luis Inácio Lula da Silva"
+ BRA_luiz:0 "Dom Luiz I"
+ 
+ #USA
+ USA_obama:0 "Barack Obama"
+ USA_trump_2016:0 "Donald Trump"
+ USA_hillary_clinton:0 "Hillary Clinton"
+ USA_joe_biden:0 "Joe Biden"
+ USA_bernie_sanders_2016:0 "Bernie Sanders"
+ USA_bernie_sanders_2020:0 "Bernie Sanders"
+ USA_bill_weld:0 "Bill Weld"
+ USA_ted_cruz:0 "Ted Cruz"
+ USA_trump_2020:0 "Donald Trump"
+ USA_kanye_west:0 "Kanye West"
+ USA_RFK_JR:0 "Robert F. Kennedy JR."
+ USA_vivek_ramaswamy:0 "Vivek Ramaswamy"
+ 
+ #Mexico
+ MEX_enrique_pena_nieto:0 "Enrique Peña Nieto"
+ 
+ #UK
+ ENG_david_cameron:0 "David Cameron"
+ 
+ #PRC
+ PRC_xi_jinping:0 "Xi Jinping"
+ 
+ #Russia
+ SOV_vladimir_putin:0 "Vladimir Putin"
+ 
+ 
