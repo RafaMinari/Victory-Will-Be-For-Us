@@ -1,0 +1,62 @@
+ideas = {
+	country = {
+		second_ammendment = {
+			picture = USA_2nd_amendment
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = -0.20
+				army_core_defence_factor = 0.30
+				supply_consumption_factor = -0.20
+			}
+		}
+		afghan_occupation = {
+			picture = USA_afghan_occupation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = -0.20
+				experience_gain_army = 0.25
+				weekly_manpower = -1000
+			}
+		}
+		foreign_aid = {
+			picture = USA_foreign_aid
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				trade_opinion_factor = 0.30
+			}
+		}
+	}
+}
