@@ -41,9 +41,9 @@ focus_tree = {
 	focus = {
 		id = USA_america_first
 		x = -8
-		y = 2
+		y = 1
 		icon = GFX_focus_USA_america_first
-		cost = 10
+		cost = 1
 		relative_position_id = USA_trump_2016
 		prerequisite = {focus = USA_trump_2016}
 		available = {
@@ -78,6 +78,281 @@ focus_tree = {
 				target = YEM
 				modifier = USA_travel_ban
 			}
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.01
+			}
+		}
+	}
+	focus = {
+		id = USA_afghan_strat
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_afghan_strategy
+		cost = 5
+		relative_position_id = USA_america_first
+		prerequisite = {focus = USA_america_first}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = afghan_occupation
+				add_idea = new_afghan_occupation
+			}
+		}
+	}
+	focus = {
+		id = USA_end_iran_deal
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_end_the_iran_deal
+		cost = 5
+		relative_position_id = USA_afghan_strat
+		prerequisite = {focus = USA_afghan_strat}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = PER
+				modifier = USA_end_iran_deal
+			}
+			remove_ideas = idea_iran_deal
+		}
+	}
+	focus = {
+		id = USA_strongest_ally
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_our_greatest_ally
+		cost = 5
+		relative_position_id = USA_afghan_strat
+		prerequisite = {focus = USA_afghan_strat}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = ISR
+				modifier = USA_jerusalem_embassy
+			}
+			every_country = {
+				limit = {
+					is_on_continent = middle_east
+				}
+				reverse_add_opinion_modifier = {
+					target = prev
+					modifier = USA_recognized_jerusalem
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_korean_diplomacy
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_korean_diplomacy
+		cost = 5
+		relative_position_id = USA_strongest_ally
+		prerequisite = {focus = USA_strongest_ally}
+		prerequisite = {focus = USA_end_iran_deal}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = NKO
+				modifier = USA_korea_summit
+			}
+			add_threat = -3
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_eagle_bear
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_eagle_and_the_bear
+		cost = 5
+		relative_position_id = USA_korean_diplomacy
+		prerequisite = {focus = USA_korean_diplomacy}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = SOV
+				modifier = USA_helsinki_summit 
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			add_timed_idea = {
+				idea = USA_russian_diplomacy
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = USA_strike_general
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_strike_the_general
+		cost = 5
+		relative_position_id = USA_eagle_bear
+		prerequisite = {focus = USA_eagle_bear}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = PER
+				modifier = USA_murder_soleimani
+			}
+			add_threat = 3
+		}
+	}
+	focus = {
+		id = USA_fair_share
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_nato_funding_cut
+		cost = 5
+		relative_position_id = USA_eagle_bear
+		prerequisite = {focus = USA_eagle_bear}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_NATO_overburden
+				add_idea = USA_NATO_dominance
+			}
+		}
+	}
+	focus = {
+		id = USA_position_strength
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_a_position_of_strength
+		cost = 10
+		relative_position_id = USA_fair_share
+		prerequisite = {focus = USA_fair_share}
+		prerequisite = {focus = USA_strike_general}
+		available = {
+			
+		}
+		completion_reward = {
+			#Placeholder (Need idea)
+		}
+	}
+	focus = {
+		id = USA_drain_swamp
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_drain_the_swamp
+		cost = 1
+		relative_position_id = USA_trump_2016
+		prerequisite = {focus = USA_trump_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.03
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_tighten_border
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_tighten_border
+		cost = 5
+		relative_position_id = USA_drain_swamp
+		prerequisite = {focus = USA_drain_swamp}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = MEX
+				modifier = USA_tighten_border
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_fill_seat
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_fill_the_seat
+		cost = 5
+		relative_position_id = USA_tighten_border
+		prerequisite = {focus = USA_tighten_border}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.03
+			}
+			add_stability = -0.01
+		}
+	}
+	focus = {
+		id = USA_build_wall
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_build_the_wall
+		cost = 5
+		relative_position_id = USA_tighten_border
+		prerequisite = {focus = USA_tighten_border}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = USA_border_crisis
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_border_crisis
+		cost = 1
+		relative_position_id = USA_fill_seat
+		prerequisite = {focus = USA_fill_seat}
+		prerequisite = {focus = USA_build_wall}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.03
+			}
+			add_stability = -0.01
 		}
 	}
 }
