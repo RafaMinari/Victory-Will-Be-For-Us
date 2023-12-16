@@ -1,18 +1,19 @@
 characters={
-	USA_obama={
-		name=USA_obama
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_barack_obama
+	USA_obama = {
+		name = USA_obama
+		portraits = {
+			civilian = {
+				large = GFX_portrait_USA_barack_obama
 			}
 		}
-		country_leader={
-			ideology=liberalism
-			traits={ }
-			expire="2030.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = social_liberal
+			traits = {  }
+			expire = "2030.3.1.1"
+			id = -1
 		}
 	}
+	
 	USA_trump={
 		name=USA_trump
 		portraits={
@@ -21,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=christian_conservative
 			traits={  }
 			expire="2030.1.1.1"
 			id=-1
@@ -169,20 +170,7 @@ characters={
 			id=-1
 		}
 	}
-	USA_joe_biden={
-		name=USA_joe_biden
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_joe_biden
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			traits={  }
-			expire="2030.1.1.1"
-			id=-1
-		}
-	}
+	
 	
 	
 	
