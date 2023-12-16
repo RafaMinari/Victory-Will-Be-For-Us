@@ -183,6 +183,27 @@ ideas = {
 				trade_cost_for_target_factor = -0.5
 			}
 		}
+		USA_tarifs_china = {
+			picture = idea_USA_TPP
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				tag = PRC
+				trade_cost_for_target_factor = 0.25
+			}
+		}
 		USA_NATO_dominance = {
 			picture = USA_nato_dominance
 			
@@ -199,6 +220,263 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				experience_gain_army = 0.10
+			}
+		}
+		USA_gov_shutdown = {
+			picture = USA_gov_shutdown
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+				consevative_drift = -0.05
+			}
+		}
+		USA_reopening_plan = {
+			picture = USA_reopening_plan
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.25
+				consumer_goods_factor = 0.5
+			}
+		}
+		USA_crowdfunding = {
+			picture = USA_crowdfunding
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		USA_all_american_economy = {
+			picture = USA_all_american_economy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+					stability_factor = -0.02
+					consumer_goods_factor = -0.2
+				}
+			}
+		}
+		USA_all_american_economy_2 = {
+			picture = USA_all_american_economy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+					stability_factor = -0.05
+					consumer_goods_factor = -0.2
+					local_resources_factor = 0.3
+				}
+			}
+		}
+		USA_all_american_economy_3 = {
+			picture = USA_all_american_economy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+					stability_factor = -0.05
+					consumer_goods_factor = -0.2
+					local_resources_factor = 0.3
+					production_speed_infrastructure_factor = 0.5
+				}
+			}
+		}
+		USA_all_american_economy_4 = {
+			picture = USA_all_american_economy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+					stability_factor = -0.05
+					consumer_goods_factor = -0.2
+					local_resources_factor = 0.3
+					production_speed_infrastructure_factor = 0.5
+					production_speed_industrial_complex_factor = 0.5
+				}
+			}
+		}
+		USA_all_american_economy_5 = {
+			picture = USA_all_american_economy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+					stability_factor = 0.05
+					consumer_goods_factor = -0.2
+					local_resources_factor = 0.3
+					min_export = 0.25
+					production_speed_infrastructure_factor = 0.5
+					production_speed_industrial_complex_factor = 0.5
+				}
+			}
+		}
+		USA_mexico_pay = {
+			picture = USA_mexico_pay
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				min_export = 0.25
+				trade_opinion_factor = 0.25
+			}
+		}
+		USA_pos_of_strength = {
+			picture = USA_pos_of_strength
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				trade_opinion_factor = 0.5
+			}
+		}
+		USA_empower_bp = {
+			picture = USA_empower_bp
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				stability_weekly = 0.05
+				nationalist_drift = 0.01
+			}
+		}
+		USA_mex_tariffs = {
+			picture = USA_mex_tariffs
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = 0.25
+			}
+		}
+			USA_USMCA = {
+			picture = idea_USA_NAFTA
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				AND = {
+					tag = MEX
+					tag = CAN
+				}
+				trade_cost_for_target_factor = -0.3
 			}
 		}
 	}
