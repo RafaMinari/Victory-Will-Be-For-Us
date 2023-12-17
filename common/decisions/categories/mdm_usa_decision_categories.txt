@@ -1,0 +1,14 @@
+obama_decisions = {
+	icon = generic_research #Placeholder
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		is_subject = no
+		has_country_leader = {
+			character = USA_obama
+			ruling_only = yes
+		}
+	}
+}
+

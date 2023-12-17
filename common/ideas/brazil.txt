@@ -1,0 +1,16 @@
+ideas = {
+	# POLITICS
+	country = {
+		BRICS = {
+			modifiers = {
+				all_country = {
+					limit = {has_idea = BRICS}
+					trade_opinion_factor = 0.5
+					opinion_gain_monthly = 5
+				}
+			}
+        }
+	}
+
+
+}

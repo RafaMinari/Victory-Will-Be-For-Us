@@ -1,0 +1,10 @@
+obama_decisions = {
+	obama_suit = {
+		icon = GFX_decision_gre_investment_decisions
+		days_re_enable = 30
+		cost = 0
+		complete_effect = {
+			 country_event = usa_obamas_last_term.2
+		}
+	}
+}

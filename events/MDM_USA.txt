@@ -4,7 +4,114 @@
 
 add_namespace = usa_primaries_2016
 add_namespace = usa_elections
+add_namespace = usa_obamas_last_term
+add_namespace = usa_trump_2016
 add_namespace = usa_coup
+
+country_event = {
+	id = usa_obamas_last_term.1
+	title = usa_obamas_last_term.1.t
+	desc = usa_obamas_last_term.1.desc
+	picture = GFX_news_event_worker_protests
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	trigger = {
+		tag = USA
+		NOT = { has_idea = iran_deal}
+	}
+	
+	option = { #Peace in our time
+		name = usa_obamas_last_term.1.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		add_ideas = iran_deal
+		reverse_add_opinion_modifier = {
+			target = PER
+			modifier = USA_iran_deal
+		}
+		break_embargo = PER
+	}
+	
+	
+}
+country_event = {
+	id = usa_obamas_last_term.2
+	title = usa_obamas_last_term.2.t
+	desc = usa_obamas_last_term.2.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	option = { #Black suit
+		name = usa_obamas_last_term.2.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 25
+		}
+		set_portraits = {
+			character = USA_obama 
+			civilian = { large = "GFX_portrait_USA_barack_obama" }
+		}	
+	}
+	option = { #White Suit
+		name = usa_obamas_last_term.2.b
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 25
+		}
+		set_portraits = {
+			character = USA_obama 
+			civilian = { large = "GFX_portrait_USA_barack_obama_white" }
+		}
+	}
+	option = { #Different Black suit
+		name = usa_obamas_last_term.2.c
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 25
+		}
+		set_portraits = {
+			character = USA_obama 
+			civilian = { large = "GFX_portrait_USA_barack_obama_black_2" }
+		}
+	}
+	option = { #Tan suit
+		name = usa_obamas_last_term.2.d
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 25
+		}
+		set_portraits = {
+			character = USA_obama 
+			civilian = { large = "GFX_portrait_USA_barack_obama_tan" }
+		}
+	}
+	
+	
+}
 
 country_event = {
 	id = usa_primaries_2016.1
@@ -100,6 +207,7 @@ country_event = {
 	trigger = {
 		tag = USA
 		date > 2016.1.1
+		date < 2016.1.1
 		has_country_flag = rep_settled_2016
 		has_country_flag = demo_settled_2016
 	}
@@ -155,6 +263,7 @@ country_event = {
 	}
 	
 }
+
 country_event = {
 	id = usa_coup.1
 	title = usa_coup.1.t
@@ -299,4 +408,332 @@ country_event = {
 	
 }
 
+country_event = { 
+	id = usa_trump_2016.1
+	title = usa_trump_2016.1.t
+	desc = usa_trump_2016.1.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	option = { #Gorsuch
+		name = usa_trump_2016.1.a
 
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		add_stability = 0.1
+		add_political_power = -50
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.01
+		}
+	}
+	option = { #He's not a good pick
+		name = usa_trump_2016.1.b
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.01
+		}
+	}
+
+}
+country_event = { 
+	id = usa_trump_2016.2
+	title = usa_trump_2016.2.t
+	desc = usa_trump_2016.2.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	option = { #Exit TPP
+		name = usa_trump_2016.2.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		
+		remove_ideas = USA_TPP
+		swap_ideas = {
+			remove_idea = USA_NAFTA
+			add_idea = USA_USMCA
+		}
+	}
+}
+country_event = { 
+	id = usa_trump_2016.3
+	title = usa_trump_2016.3.t
+	desc = usa_trump_2016.3.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	option = { #Welcome
+		name = usa_trump_2016.3.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -75
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.01
+		}
+	}
+	option = { #Doesn't he have some allegations?
+		name = usa_trump_2016.3.b
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = 25
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.01
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.02
+		}
+	}
+}
+country_event = { 
+	id = usa_trump_2016.4
+	title = usa_trump_2016.4.t
+	desc = usa_trump_2016.4.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	option = { #Build the wall
+		name = usa_trump_2016.4.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		#Start debate
+		set_variable = {
+			var = USA_wall_pop
+			value = 100
+			tooltip = usa_wall_pop_tt
+		}
+		set_country_flag = debate_wall
+	}
+	
+}
+country_event = { 
+	id = usa_trump_2016.5
+	title = usa_trump_2016.5.t
+	desc = usa_trump_2016.5.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	option = { #How horrible
+		name = usa_trump_2016.5.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		subtract_from_variable = {
+			var = USA_wall_pop
+			value = -20
+			tooltip = usa_wall_pop_lose_20
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.02
+		}
+	}
+	option = { #I mean, they are not americans
+		name = usa_trump_2016.5.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 50
+		}
+		add_to_variable = {
+			var = USA_wall_pop
+			value = 20
+			tooltip = usa_wall_pop_add_20
+		}
+	}
+	
+}
+country_event = { 
+	id = usa_trump_2016.6
+	title = usa_trump_2016.6.t
+	desc = usa_trump_2016.6.desc
+	picture = GFX_news_event_worker_protests
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	trigger = {
+		tag = USA
+		has_country_flag = debate_wall
+	}
+	
+	option = { #lose pop
+		name = usa_trump_2016.6.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		subtract_from_variable = {
+			var = USA_wall_pop
+			value = -10
+			tooltip = usa_wall_pop_lose_10
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.05
+		}
+	}
+}
+country_event = { 
+	id = usa_trump_2016.7
+	title = usa_trump_2016.7.t
+	desc = usa_trump_2016.7.desc
+	picture = GFX_news_event_worker_protests
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	trigger = {
+		tag = USA
+		has_country_flag = debate_wall
+	}
+	
+	option = { #gain pop
+		name = usa_trump_2016.7.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		add_to_variable = {
+			var = USA_wall_pop
+			value = 10
+			tooltip = usa_wall_pop_add_10
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+	}
+}
+country_event = { 
+	id = usa_trump_2016.8
+	title = usa_trump_2016.8.t
+	desc = usa_trump_2016.8.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	option = { #THE WALL
+		name = usa_trump_2016.8.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.15
+		}
+		add_political_power = 150
+	}
+}
+country_event = { 
+	id = usa_trump_2016.9
+	title = usa_trump_2016.9.t
+	desc = usa_trump_2016.9.desc
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+		has_idea = USA_all_american_economy
+		any_character = {
+			AND = {
+				is_country_leader = yes
+				NOT = {
+					OR = {
+						has_ideology_group = nationalist
+						has_ideology_group = conservative
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #remove idea
+		name = usa_trump_2016.9.a
+
+		trigger = {
+			always = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+		remove_ideas = USA_all_american_economy
+	}
+}
