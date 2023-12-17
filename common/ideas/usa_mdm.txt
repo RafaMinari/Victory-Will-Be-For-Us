@@ -155,12 +155,15 @@ ideas = {
 				
 			}
 			targeted_modifier = {
-				AND = {
-					tag = MEX
-					tag = CAN
-				}
+				tag = CAN
+
 				trade_cost_for_target_factor = -0.5
 			}
+			targeted_modifier = {
+				tag = MEX
+
+			trade_cost_for_target_factor = -0.5
+		}
 		}
 		USA_TPP = {
 			picture = idea_USA_TPP
