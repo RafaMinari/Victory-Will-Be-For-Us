@@ -560,7 +560,7 @@ focus_tree = {
 				}
 			}
 			add_popularity = {
-				ideology = nationalism
+				ideology = nationalist
 				popularity = 0.05
 			}
 			country_event = usa_trump_2016.8
