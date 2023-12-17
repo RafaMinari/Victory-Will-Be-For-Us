@@ -1,4 +1,5 @@
 version="1"
+replace_path="gfx/loadingscreens"
 tags={
 	"Alternative History"
 }
