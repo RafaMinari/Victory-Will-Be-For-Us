@@ -1,0 +1,79 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_USA_2nd_amendment"
+		texturefile = "gfx/interface/ideas/USA_2nd_amendment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_afghan_occupation"
+		texturefile = "gfx/interface/ideas/USA_afghan_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_foreign_aid"
+		texturefile = "gfx/interface/ideas/USA_foreign_aid.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_iran_deal"
+		texturefile = "gfx/interface/ideas/iran_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_russian_diplomacy"
+		texturefile = "gfx/interface/ideas/USA_russian_diplomacy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_new_afghan_occupation"
+		texturefile = "gfx/interface/ideas/USA_new_afghan_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_nato_overburden"
+		texturefile = "gfx/interface/ideas/USA_nato_overburden.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_NAFTA"
+		texturefile = "gfx/interface/ideas/USA_NAFTA_idea.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_USA_TPP"
+		texturefile = "gfx/interface/ideas/USA_TPP.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_land_of_the_free"
+		texturefile = "gfx/interface/ideas/land_of_the_free.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_nato_dominance"
+		texturefile = "gfx/interface/ideas/USA_nato_dominance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_gov_shutdown"
+		texturefile = "gfx/interface/ideas/USA_gov_shutdown.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_reopening_plan"
+		texturefile = "gfx/interface/ideas/USA_reopening_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_crowdfunding"
+		texturefile = "gfx/interface/ideas/USA_crowdfunding.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_all_american_economy"
+		texturefile = "gfx/interface/ideas/USA_all_american_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_mexico_pay"
+		texturefile = "gfx/interface/ideas/USA_mexico_pay.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_pos_of_strength"
+		texturefile = "gfx/interface/ideas/USA_pos_of_strength.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_empower_bp"
+		texturefile = "gfx/interface/ideas/USA_empower_bp.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_mex_tariffs"
+		texturefile = "gfx/interface/ideas/USA_mex_tariffs.dds"
+	}
+}
