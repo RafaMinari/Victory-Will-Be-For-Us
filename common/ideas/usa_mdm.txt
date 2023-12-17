@@ -294,7 +294,7 @@ ideas = {
 					consumer_goods_factor = -0.2
 				}
 			}
-		}
+		
 		USA_all_american_economy_2 = {
 			picture = USA_all_american_economy
 			
@@ -314,7 +314,7 @@ ideas = {
 					local_resources_factor = 0.3
 				}
 			}
-		}
+		
 		USA_all_american_economy_3 = {
 			picture = USA_all_american_economy
 			
@@ -335,7 +335,7 @@ ideas = {
 					production_speed_infrastructure_factor = 0.5
 				}
 			}
-		}
+		
 		USA_all_american_economy_4 = {
 			picture = USA_all_american_economy
 			
@@ -357,7 +357,7 @@ ideas = {
 					production_speed_industrial_complex_factor = 0.5
 				}
 			}
-		}
+		
 		USA_all_american_economy_5 = {
 			picture = USA_all_american_economy
 			
@@ -380,7 +380,7 @@ ideas = {
 					production_speed_industrial_complex_factor = 0.5
 				}
 			}
-		}
+		
 		USA_mexico_pay = {
 			picture = USA_mexico_pay
 			
