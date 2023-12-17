@@ -1,0 +1,4 @@
+KOS	= "countries/Kosovo.txt"
+NKO	= "countries/North Korea.txt"
+PBC = "countries/Peru Bolivia Confederation.txt"
+

@@ -1,0 +1,28 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+###Todo remove commented advisor experience gains
+
+leader_traits = {
+
+	true_patriot = {
+		random = no
+		political_power_gain = 0.30
+		stability_weekly = 0.2
+		production_speed_bunker_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
