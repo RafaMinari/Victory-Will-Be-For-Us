@@ -1,0 +1,144 @@
+spriteTypes = {
+
+	# USA
+	spriteType = {
+		name = "GFX_portrait_USA_barack_obama"
+		texturefile = "gfx/leaders/USA/Portrait_Barack_Obama.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_barack_obama_white"
+		texturefile = "gfx/leaders/USA/Portrait_Barack_Obama_White.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_barack_obama_black_2"
+		texturefile = "gfx/leaders/USA/Portrait_Barack_Obama_Black_2.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_barack_obama_tan"
+		texturefile = "gfx/leaders/USA/Portrait_Barack_Obama_Tan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_donald_trump"
+		texturefile = "gfx/leaders/USA/Portrait_Donald_Trump.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_hillary_clinton"
+		texturefile = "gfx/leaders/USA/Portrait_Hillary_Clinton.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_bernie_sanders_2016"
+		texturefile = "gfx/leaders/USA/Portrait_Bernie_Sanders_2016.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_bernie_sanders_2020"
+		texturefile = "gfx/leaders/USA/Portrait_Bernie_Sanders_2020.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_bill_weld"
+		texturefile = "gfx/leaders/USA/Portrait_Bill_Weld.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_joe_biden"
+		texturefile = "gfx/leaders/USA/Portrait_Joe_Biden.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_ted_cruz"
+		texturefile = "gfx/leaders/USA/Portrait_Ted_Cruz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_trump_maga_2020"
+		texturefile = "gfx/leaders/USA/Portrait_Trump_MAGA_2020.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_Kanye_West"
+		texturefile = "gfx/leaders/USA/Portrait_Kanye_West.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_RFK_JR"
+		texturefile = "gfx/leaders/USA/Portrait_RFK_JR.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_Vivek_Ramaswamy"
+		texturefile = "gfx/leaders/USA/Portrait_Vivek_Ramaswamy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_Joe_Biden_2024"
+		texturefile = "gfx/leaders/USA/Portrait_Joe_Biden_2024.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_Newsom_2024"
+		texturefile = "gfx/leaders/USA/Portrait_Newsom_2024.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_Taylor_Marshal_2028"
+		texturefile = "gfx/leaders/USA/Portrait_taylor_marshal_2028.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_Trump_2024"
+		texturefile = "gfx/leaders/USA/Portrait_Trump_2024.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_pete_buttigeg"
+		texturefile = "gfx/leaders/USA/Portrait_pete_buttigeg.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_tucker_2024"
+		texturefile = "gfx/leaders/USA/Portrait_tucker_2024.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_James_Mason"
+		texturefile = "gfx/leaders/USA/Portrait_James_Mason.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USA_Portrait_Jay_Robert_Pritzker"
+		texturefile = "gfx/leaders/USA/Portrait_Jay_Robert_Pritzker.dds"
+	}
+	#France
+	spriteType = {
+		name = "GFX_portrait_FRA_jean-marc_ayrault"
+		texturefile = "gfx/leaders/FRA/Portrait_Jean-Marc_Ayrault.dds"
+	}
+	
+	#UK
+	spriteType = {
+		name = "GFX_portrait_ENG_david_cameron"
+		texturefile = "gfx/leaders/ENG/Portrait_David_Cameron.dds"
+	}
+	#Germany
+	spriteType = {
+		name = "GFX_portrait_GER_Angela_Merkel"
+		texturefile = "gfx/leaders/GER/Portrait_Angela_Merkel.dds"
+	}
+	
+	#Russia
+	spriteType = {
+		name = "GFX_portrait_SOV_vladimir_putin"
+		texturefile = "gfx/leaders/SOV/Portrait_Vladimir_Putin.dds"
+	}
+	
+	#Brazil
+	spriteType = {
+		name = "GFX_portrait_BRA_dilma"
+		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Dilma.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BRA_Lula"
+		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Lula.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BRA_Luiz_emperor"
+		texturefile = "gfx/leaders/BRA/Portrait_Brazil_LuizEmperor.dds"
+	}
+	
+	#Mexico
+	spriteType = {
+		name = "GFX_portrait_MEX_enrique_pena_nieto"
+		texturefile = "gfx/leaders/MEX/Portrait_Enrique_Pena_Nieto.dds"
+	}
+	
+	#PRC
+	spriteType = {
+		name = "GFX_portrait_PRC_Xi_Jinping"
+		texturefile = "gfx/leaders/PRC/Portrait_Xi_Jinping.dds"
+	}
+}
