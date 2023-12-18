@@ -1,4 +1,7 @@
 KOS	= "countries/Kosovo.txt"
 NKO	= "countries/North Korea.txt"
 PBC = "countries/Peru Bolivia Confederation.txt"
+LES = "countries/Lesotho.txt"
+SWA = "countries/Swaziland.txt"
+SSU = "countries/South Sudan.txt"
 
