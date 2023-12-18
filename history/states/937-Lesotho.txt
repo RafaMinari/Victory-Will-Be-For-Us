@@ -6,7 +6,8 @@ state={
 	}
 	state_category = town
 	history = {
-		owner = SAF
+		owner = LES
+		add_core_of = LES
 	}
 	manpower=2000000
 	buildings_max_level_factor=1.000

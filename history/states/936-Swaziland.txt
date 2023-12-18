@@ -4,8 +4,8 @@ state={
 	name="STATE_936"
 
 	history={
-		owner = SAF
-
+		owner = SWA
+		add_core_of = SWa
 	}
 	state_category = town
 	provinces={
