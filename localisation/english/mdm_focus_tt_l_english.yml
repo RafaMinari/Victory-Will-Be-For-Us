@@ -1,4 +1,7 @@
 ﻿l_english:
-#Brazil
- BRA_prepare_emperor_tt:0 "This will start the preparations to the Emperor's coup. We will be able to take decisions to make it easier. We might even be able to get into power by a referendum"
- BRA_coup_king_tt:0 "The Emperor will finally decide between a violent coup and a referendum."
+ #Brazil
+  BRA_prepare_emperor_tt:0 "This will start the preparations to the Emperor's coup. We will be able to take decisions to make it easier. We might even be able to get into power by a referendum"
+  BRA_coup_king_tt:0 "The Emperor will finally decide between a violent coup and a referendum."
+ #USA
+  wall_must_be_approved_tt:0 "Senate must approve the construction of the wall for this focus"
+  wall_must_be_blocked_tt:0 "Senate must block the construction of the wall for this focus"

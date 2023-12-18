@@ -1,6 +1,15 @@
 ﻿l_english:
+
+#BRAZIL
  BRA_pt:0 "PT"
  BRA_pt_long:0 "Partido dos Trabalhadores"
  BRA_communist_party:1 "PCB"
  BRA_neutrality_party:1 "PMB"
+ 
+ #USA
+ USA_liberal_party_:0 "Democrats"
+ USA_liberal_party_long:0 "Democratic Party"
+ USA_conservative_party:0 "Reps"
+ USA_conservative_party_long:0 "Republican Party"
+ 
  
