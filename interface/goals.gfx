@@ -133,6 +133,34 @@ spriteTypes = {
 	name = "GFX_focus_USA_bigger_and_better"
 	texturefile = "gfx/interface/goals/focus_USA_bigger_and_better.dds"			
 	}
+	SpriteType = {
+	name = "GFX_focus_USA_audacity_of_hope"
+	texturefile = "gfx/interface/goals/focus_USA_audacity_of_hope.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_USA_state_of_the_union"
+	texturefile = "gfx/interface/goals/focus_USA_state_of_the_union.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_USA_bernie_2016"
+	texturefile = "gfx/interface/goals/focus_USA_bernie_2016.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_USA_people_centered_policy"
+	texturefile = "gfx/interface/goals/focus_USA_people_centered_policy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_USA_protect_american_labor"
+	texturefile = "gfx/interface/goals/focus_USA_protect_american_labor.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_USA_equalize_the_burden"
+	texturefile = "gfx/interface/goals/focus_USA_equalize_the_burden.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_USA_stop_the_expansion"
+	texturefile = "gfx/interface/goals/focus_USA_stop_the_expansion.dds"			
+	}
 	
 	#### Generic continuous goal icons
 	
