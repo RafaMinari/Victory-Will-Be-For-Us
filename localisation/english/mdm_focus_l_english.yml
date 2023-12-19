@@ -16,6 +16,7 @@
   BRA_democracy_failed:0 "Democracy has failed..."
   BRA_king_will_not:0 "The Emperor will not."
   #USA
+  USA_trump_2016:0 "Donald Trump"
   USA_trump_america_first:0 "America First"
   USA_trump_america_first_desc:0 "America first is an isolationist, anti-interventionist, nationalist policy that must be implemented to ensure America's greatness. Not world first, America first."
   USA_afghan_strat:0 "The Afghan Strategy"
