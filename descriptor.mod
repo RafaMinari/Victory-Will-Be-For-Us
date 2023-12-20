@@ -1,6 +1,7 @@
 version="1"
 replace_path="gfx/loadingscreens"
 replace_path="common/ai_strategy_plans"
+replace_path="events"
 tags={
 	"Alternative History"
 }
