@@ -1,0 +1,23 @@
+﻿l_spanish:
+#GENERAL
+ democratic:0 "Liberal"
+ neutrality:0 "Authoritarian"
+ conservative:0 "Conservative"
+ centrism:0 "Centrist"
+ nationalist:0 "Nationalist"
+ socialism:0 "Socialist"
+ socdem:0 "Social Democratic"
+
+#BRAZIL
+ BRA_pt:0 "PT"
+ BRA_pt_long:0 "Partido dos Trabalhadores"
+ BRA_communist_party:1 "PCB"
+ BRA_neutrality_party:1 "PMB"
+ 
+#USA
+ USA_liberal_party_:0 "Democrats"
+ USA_liberal_party_long:0 "Democratic Party"
+ USA_conservative_party:0 "Reps"
+ USA_conservative_party_long:0 "Republican Party"
+ 
+ 
