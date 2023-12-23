@@ -1,0 +1,1159 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = american_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = usa
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+	focus = {
+		id = USA_audacity_of_hope
+		x = 6
+		y = 1
+		icon = GFX_focus_USA_audacity_of_hope
+		cost = 10
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_state_of_the_union
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_state_of_the_union
+		cost = 5
+		relative_position_id = USA_audacity_of_hope
+		prerequisite = {focus = USA_audacity_of_hope}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.02
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_the_cuban_thaw
+		x = -4
+		y = 1
+		icon = GFX_focus_USA_cuban_thaw
+		cost = 10
+		relative_position_id = USA_state_of_the_union
+		prerequisite = {focus = USA_state_of_the_union}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			break_embargo = CUB
+			reverse_add_opinion_modifier = {
+				target = CUB
+				modifier = USA_reestablished_relations
+			}
+			add_opinion_modifier = {
+				target = CUB
+				modifier = USA_reestablished_relations
+			}
+		}
+	}
+	focus = {
+		id = USA_FPSW
+		x = 4
+		y = 1
+		icon = GFX_focus_USA_fpsw
+		cost = 10
+		relative_position_id = USA_state_of_the_union
+		prerequisite = {focus = USA_state_of_the_union}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_TPP_focus
+		x = -4
+		y = 1
+		icon = GFX_focus_USA_trans_pacific_partnership
+		cost = 10
+		relative_position_id = USA_FPSW
+		prerequisite = {focus = USA_FPSW}
+		prerequisite = {focus = USA_the_cuban_thaw}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = {USA_TPP}
+		}
+	}
+	focus = {
+		id = USA_embattled_nomination
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_an_embattled_nomination
+		cost = 10
+		relative_position_id = USA_FPSW
+		prerequisite = {focus = USA_FPSW}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+			date > 2016.02.3
+		}
+		completion_reward = {
+			add_stability = -0.05
+			#Event goes here
+		}
+	}
+	focus = {
+		id = USA_welcoming_his_holiness
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_welcoming_his_holiness
+		cost = 10
+		relative_position_id = USA_the_cuban_thaw
+		prerequisite = {focus = USA_the_cuban_thaw}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			#Event goes here
+		}
+	}
+	focus = {
+		id = USA_a_graceful_exit
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_graceful_exit
+		cost = 10
+		relative_position_id = USA_welcoming_his_holiness
+		prerequisite = {focus = USA_welcoming_his_holiness}
+		prerequisite = {focus = USA_TPP_focus}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			#Placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_bold_stand
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_bold_stand
+		cost = 10
+		relative_position_id = USA_TPP_focus
+		prerequisite = {focus = USA_TPP_focus}
+		prerequisite = {focus = USA_embattled_nomination}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+			date > 2016.06.1
+		}
+		completion_reward = {
+			add_stability = -0.05
+			#Event goes here
+		}
+		
+	}
+	focus = {
+		id = USA_trump_2016
+		x = 26
+		y = 1
+		icon = GFX_focus_USA_trump_2016
+		cost = 1
+		available = {
+			has_country_leader = {
+				character = USA_trump
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_trump_america_first
+		x = -8
+		y = 1
+		icon = GFX_focus_USA_america_first
+		cost = 1
+		relative_position_id = USA_trump_2016
+		prerequisite = {focus = USA_trump_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = PER
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = IRQ
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = LBA
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = SOM
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = SUD
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = SYR
+				modifier = USA_travel_ban
+			}
+			reverse_add_opinion_modifier = {
+				target = YEM
+				modifier = USA_travel_ban
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.01
+			}
+		}
+	}
+	focus = {
+		id = USA_afghan_strat
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_afghan_strategy
+		cost = 5
+		relative_position_id = USA_trump_america_first
+		prerequisite = {focus = USA_trump_america_first}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = afghan_occupation
+				add_idea = new_afghan_occupation
+			}
+		}
+	}
+	focus = {
+		id = USA_end_iran_deal
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_end_the_iran_deal
+		cost = 5
+		relative_position_id = USA_afghan_strat
+		prerequisite = {focus = USA_afghan_strat}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = PER
+				modifier = USA_end_iran_deal
+			}
+			remove_ideas = idea_iran_deal
+			send_embargo = PER
+		}
+	}
+	focus = {
+		id = USA_strongest_ally
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_our_greatest_ally
+		cost = 5
+		relative_position_id = USA_afghan_strat
+		prerequisite = {focus = USA_afghan_strat}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = ISR
+				modifier = USA_jerusalem_embassy
+			}
+			every_country = {
+				limit = {
+					capital_scope = { is_on_continent = middle_east }
+					NOT = {tag = ISR}
+				}
+				reverse_add_opinion_modifier = {
+					target = prev
+					modifier = USA_recognized_jerusalem
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_korean_diplomacy
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_korean_diplomacy
+		cost = 5
+		relative_position_id = USA_strongest_ally
+		prerequisite = {focus = USA_strongest_ally}
+		prerequisite = {focus = USA_end_iran_deal}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = NKO
+				modifier = USA_korea_summit
+			}
+			add_threat = -3
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_eagle_bear
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_eagle_and_the_bear
+		cost = 5
+		relative_position_id = USA_korean_diplomacy
+		prerequisite = {focus = USA_korean_diplomacy}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = SOV
+				modifier = USA_helsinki_summit 
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			add_timed_idea = {
+				idea = USA_russian_diplomacy
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = USA_strike_general
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_strike_the_general
+		cost = 5
+		relative_position_id = USA_eagle_bear
+		prerequisite = {focus = USA_eagle_bear}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = PER
+				modifier = USA_murder_soleimani
+			}
+			add_threat = 3
+		}
+	}
+	focus = {
+		id = USA_fair_share
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_nato_funding_cut
+		cost = 5
+		relative_position_id = USA_eagle_bear
+		prerequisite = {focus = USA_eagle_bear}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_NATO_overburden
+				add_idea = USA_NATO_dominance
+			}
+		}
+	}
+	focus = {
+		id = USA_position_strength
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_a_position_of_strength
+		cost = 10
+		relative_position_id = USA_fair_share
+		prerequisite = {focus = USA_fair_share}
+		prerequisite = {focus = USA_strike_general}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = USA_pos_of_strength
+		}
+	}
+	focus = {
+		id = USA_drain_swamp
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_drain_the_swamp
+		cost = 1
+		relative_position_id = USA_trump_2016
+		prerequisite = {focus = USA_trump_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.03
+			}
+			add_stability = 0.05
+			country_event = usa_trump_2016.1
+		}
+	}
+	focus = {
+		id = USA_tighten_border
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_tighten_border
+		cost = 5
+		relative_position_id = USA_drain_swamp
+		prerequisite = {focus = USA_drain_swamp}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = MEX
+				modifier = USA_tighten_border
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_fill_seat
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_fill_the_seat
+		cost = 5
+		relative_position_id = USA_tighten_border
+		prerequisite = {focus = USA_tighten_border}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.03
+			}
+			add_stability = -0.01
+			country_event = usa_trump_2016.3
+		}
+	}
+	focus = {
+		id = USA_build_wall
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_build_the_wall
+		cost = 5
+		relative_position_id = USA_tighten_border
+		prerequisite = {focus = USA_tighten_border}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			country_event = usa_trump_2016.4
+		}
+	}
+	focus = {
+		id = USA_border_crisis
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_border_crisis
+		cost = 1
+		relative_position_id = USA_fill_seat
+		prerequisite = {focus = USA_fill_seat}
+		prerequisite = {focus = USA_build_wall}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			country_event = usa_trump_2016.5
+		}
+	}
+	focus = {
+		id = USA_southern_border
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_the_southern_border
+		cost = 1
+		mutually_exclusive = { focus = USA_government_shutdown}
+		relative_position_id = USA_border_crisis
+		prerequisite = {focus = USA_border_crisis}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = wall_must_be_approved_tt		
+				has_country_flag = senate_approved_wall
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}	
+		}
+	}
+	focus = {
+		id = USA_make_mexico_pay
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_make_mexico_pay_for_it
+		cost = 5
+		relative_position_id = USA_southern_border
+		prerequisite = {focus = USA_southern_border}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = USA_mexico_pay 
+			MEX = {
+				add_ideas = USA_mex_tariffs
+			}
+		}
+	}
+	focus = {
+		id = USA_empower_border_patrol
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_empower_border_patrol
+		cost = 5
+		relative_position_id = USA_southern_border
+		prerequisite = {focus = USA_southern_border}
+		available = {
+			
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = 	USA_empower_bp
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = USA_southern_wall
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_the_great_southern_wall
+		cost = 10
+		relative_position_id = USA_empower_border_patrol
+		prerequisite = {focus = USA_empower_border_patrol}
+		prerequisite = {focus = USA_make_mexico_pay}
+		available = {
+			
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = USA
+				modifier = USA_built_wall
+			}
+			if = {
+				limit = { 
+						375 = {
+							is_controlled_by = ROOT 
+						}
+						376 = {
+							is_controlled_by = ROOT 
+						}
+						377 = {
+							is_controlled_by = ROOT 
+						}
+						378 = {
+							is_controlled_by = ROOT 
+						}	
+				}
+				custom_effect_tooltip = USA_mexico_wall_border
+				hidden_effect = {
+					378 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1562
+							instant_build = yes
+						}
+					
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12374
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7986
+							instant_build = yes
+						}
+					}
+					377 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10783
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3834
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7920
+							instant_build = yes
+						}
+					}
+					376 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5044
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12791
+							instant_build = yes
+						}
+					}
+					375 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10740
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10894
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1954
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5038
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12728
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 2019
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5061
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12369
+							instant_build = yes
+						}
+					}
+					
+				}
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.05
+			}
+			country_event = usa_trump_2016.8
+		}
+	}
+	focus = {
+		id = USA_government_shutdown
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_government_shutdown
+		cost = 1
+		mutually_exclusive = { focus = USA_southern_border }
+		relative_position_id = USA_border_crisis
+		prerequisite = {focus = USA_border_crisis}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = wall_must_be_blocked_tt		
+				has_country_flag = senate_blocked_wall
+			}
+	
+		}
+		completion_reward = {
+			add_ideas = USA_gov_shutdown
+		}
+	}
+	focus = {
+		id = USA_back_to_work
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_back_to_work
+		cost = 5
+		relative_position_id = USA_government_shutdown
+		prerequisite = {focus = USA_government_shutdown}
+		available = {
+			
+		}
+		completion_reward = {
+				remove_ideas = USA_gov_shutdown
+				add_timed_idea = {
+					idea = 	USA_reopening_plan
+					days = 180
+				}
+		}
+	}
+	focus = {
+		id = USA_a_few_dollars_short
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_few_dollars_short
+		cost = 5
+		relative_position_id = USA_back_to_work
+		prerequisite = {focus = USA_back_to_work}
+		available = {
+			
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = 	USA_crowdfunding
+				days = 90
+			}	
+		}
+	}
+	focus = {
+		id = USA_great_again
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_great_again
+		cost = 10
+		relative_position_id = USA_a_few_dollars_short
+		prerequisite = {
+			focus = USA_a_few_dollars_short
+			focus = USA_southern_wall
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_trait = {
+				character = USA_trump
+				ideology = christian_conservative
+				trait = true_patriot
+		   }
+		}
+	}
+	focus = {
+		id = USA_all_american_economy
+		x = 6
+		y = 1
+		icon = GFX_focus_USA_all_american_economy
+		cost = 1
+		relative_position_id = USA_trump_2016
+		prerequisite = {focus = USA_trump_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			country_event = usa_trump_2016.2
+		}
+	}
+	focus = {
+		id = USA_revise_tax_code
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_revise_tax_code
+		cost = 5
+		relative_position_id = USA_all_american_economy
+		prerequisite = {focus = USA_all_american_economy}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = USA_all_american_economy
+		}
+	}
+	focus = {
+		id = USA_encourage_business_interests
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_business_interests
+		cost = 5
+		relative_position_id = USA_revise_tax_code
+		prerequisite = {focus = USA_revise_tax_code}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_all_american_economy
+				add_idea = USA_all_american_economy_2
+			}
+			
+		}
+	}
+	focus = {
+		id = USA_american_energy_independence
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_american_energy
+		cost = 5
+		relative_position_id = USA_all_american_economy
+		prerequisite = {focus = USA_all_american_economy}
+		available = {
+			has_completed_focus = USA_encourage_business_interests
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_all_american_economy_2
+				add_idea = USA_all_american_economy_3
+			}
+		}
+	}
+	focus = {
+		id = USA_trade_war
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_trade_war
+		cost = 5
+		relative_position_id = USA_american_energy_independence
+		prerequisite = {focus = USA_american_energy_independence}
+		available = {
+		
+		}
+		completion_reward = {
+			add_ideas = USA_tarifs_china
+			swap_ideas = {
+				remove_idea = USA_all_american_economy_3
+				add_idea = USA_all_american_economy_4
+			}
+		}
+	}
+	focus = {
+		id = USA_bigger_and_better
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_bigger_and_better
+		cost = 5
+		relative_position_id = USA_encourage_business_interests
+		prerequisite = {focus = USA_encourage_business_interests}
+		prerequisite = {focus = USA_trade_war}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_all_american_economy_4
+				add_idea = USA_all_american_economy_5
+			}
+			
+		}
+	}
+	focus = {
+		id = USA_bernie_2016
+		x = 44
+		y = 1
+		icon = GFX_focus_USA_bernie_2016
+		cost = 1
+		available = {
+			has_country_leader = {
+				character = USA_bernie_sanders
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_people_centered_policy
+		x = -6
+		y = 1
+		icon = GFX_focus_USA_people_centered_policy
+		cost = 1
+		relative_position_id = USA_bernie_2016
+		prerequisite = {focus = USA_bernie_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_protect_american_labor
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_protect_american_labor
+		cost = 5
+		relative_position_id = USA_people_centered_policy
+		prerequisite = {focus = USA_people_centered_policy}
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {has_idea = export_focus}
+				}
+				add_ideas = export_focus 
+			}
+		}
+	}
+	focus = {
+		id = USA_protect_american_labor
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_protect_american_labor
+		cost = 5
+		relative_position_id = USA_people_centered_policy
+		prerequisite = {focus = USA_people_centered_policy}
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {has_idea = export_focus}
+				}
+				add_ideas = export_focus 
+			}
+		}
+	}
+	focus = {
+		id = USA_equalize_burden
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_equalize_the_burden
+		cost = 5
+		relative_position_id = USA_protect_american_labor
+		prerequisite = {focus = USA_protect_american_labor}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_stop_expansion
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_stop_the_expansion
+		cost = 5
+		relative_position_id = USA_equalize_burden
+		prerequisite = {focus = USA_equalize_burden}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = { 
+				every_country = {
+					limit = {
+						is_in_faction_with = USA
+					}
+					
+				}
+			}
+			custom_effect_tooltip = USA_stop_expansion_tt
+		}
+	}
+	focus = {
+		id = USA_bring_them_home
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_bring_them_home
+		cost = 5
+		relative_position_id = USA_protect_american_labor
+		prerequisite = {focus = USA_protect_american_labor}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_an_end_to_war
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_an_end_to_war
+		cost = 5
+		relative_position_id = USA_bring_them_home
+		prerequisite = {focus = USA_bring_them_home}
+		available = {
+			
+		}
+		completion_reward = {
+			every_country = {
+				limit = {NOT = {is_in_faction_with = USA}}
+				diplomatic_relation = {
+					country = ROOT
+					relation = military_access
+					active = no
+					
+				}
+			}
+			
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_our_main_rival
+		x = 2 
+		y = 1
+		icon = GFX_focus_USA_our_main_rival
+		cost = 5
+		relative_position_id = USA_protect_american_labor
+		prerequisite = {focus = USA_protect_american_labor}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = USA_tarifs_china
+		}
+	}
+	focus = {
+		id = USA_chain_the_bear
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_chain_the_bear
+		cost = 5
+		relative_position_id = USA_our_main_rival
+		prerequisite = {focus = USA_our_main_rival}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+
+			send_embargo = SOV
+		}
+	}
+	focus = {
+		id = USA_champions_of_peace
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_champions_of_peace
+		cost = 10
+		relative_position_id = USA_chain_the_bear
+		prerequisite = {focus = USA_chain_the_bear}
+		prerequisite = {focus = USA_stop_expansion}
+		prerequisite = {focus = USA_an_end_to_war}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_happy_days_are_here_again
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_happy_days
+		cost = 1
+		relative_position_id = USA_bernie_2016
+		prerequisite = {focus = USA_bernie_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+}

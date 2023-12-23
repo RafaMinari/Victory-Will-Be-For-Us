@@ -1,0 +1,1143 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = brazilian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	
+	default = no
+	#Industry
+
+	focus = {
+		id = BRA_developindustry
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		available = {
+   			 
+		}
+
+		completion_reward = {
+   		 	add_tech_bonus = {
+    		bonus = 1
+   			 uses = 2
+    		 category = industry
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_focus_on_oil
+		x = 5
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = BRA_USP_research}
+		cost = 10
+		available = {
+   			 
+		}
+
+		completion_reward = {
+   		 	add_tech_bonus = {
+    		bonus = 1
+   			 uses = 2
+    		 category = synth_resources
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_USP_research
+		x = 5
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = BRA_developindustry}
+		cost = 10
+		available = {
+   			 
+		}
+
+		completion_reward = {
+   		 	add_tech_bonus = {
+    		bonus = 1
+   			 uses = 2
+    		 category = industry
+			}	
+		}
+	}
+
+
+	focus = {
+		id = BRA_spdevelop
+		x = 1
+		y = 2
+		icon = GFX_focus_BRA_sp_develop
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		cost = 5
+		prerequisite = {focus = BRA_developindustry}
+		cancel_if_invalid = yes
+		available = {
+   			501 = { is_owned_by = BRA }
+		}
+
+		completion_reward = {
+			501 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+   					type = industrial_complex	
+   					level = 5
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_riodevelop
+		x = 1
+		y = 3
+		icon = GFX_focus_generic_industry_1
+		cost = 5
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = BRA_spdevelop}
+		cancel_if_invalid = yes
+		available = {
+   			500 = { is_owned_by = BRA }
+		}
+
+		completion_reward = {
+			500 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+   					type = industrial_complex	
+   					level = 5
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BRA_northeast_dev_program
+		x = 1
+		y = 4
+		icon = GFX_focus_generic_industry_1
+		cost = 5
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = BRA_riodevelop}
+		cancel_if_invalid = yes
+		available = {
+			AND = {
+				497 = { is_owned_by = BRA }
+				498 = { is_owned_by = BRA }
+				499 = { is_owned_by = BRA }
+			}
+   			
+		}
+
+		completion_reward = {
+			497 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+   					type = industrial_complex	
+   					level = 5
+    				instant_build = yes
+				}
+			}
+			498 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+   					type = industrial_complex	
+   					level = 5
+    				instant_build = yes
+				}
+			}
+			499 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+   					type = industrial_complex	
+   					level = 5
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Politics
+
+	focus = {
+		id = BRA_demobastion
+		x = 11
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		mutually_exclusive = { focus = BRA_theotherlineofthought focus = BRA_democracy_failed}
+		icon = GFX_goal_support_democracy
+		cost = 10
+		available = {
+   			has_government = democratic
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+		    	ideology = democratic
+    	    	popularity = 0.10
+			}	
+			set_power_balance = {
+    			id = BRA_bop_left_right
+   				left_side = BRA_tol_left_side
+    			right_side = BRA_tol_right_side
+			}	
+			custom_effect_tooltip = BRA_ideologiesradicalized
+		}
+	}
+
+	focus = {
+		id = BRA_natofriendship
+		x = 9
+		y = 2
+		cost = 6
+		prerequisite = {focus = BRA_demobastion}
+		mutually_exclusive = { focus = BRA_the_sa_alternative}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_democracy
+		available = {
+   			has_government = democratic
+		}
+
+		completion_reward = {
+   		 	every_country = {
+				limit = {
+					is_in_faction_with = USA
+				}
+				add_opinion_modifier = {
+    			  target = BRA
+  				  modifier = large_increase
+               }
+			}	
+		}
+	}
+	focus = {
+		id = BRA_NATO_entrance
+		x = 9
+		y = 3
+		cost = 10
+		prerequisite = {focus = BRA_natofriendship}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_democracy
+		available = {
+   			has_government = democratic
+		}
+
+		completion_reward = {
+   		 	USA = { add_to_faction = BRA }
+			USA = {
+					set_faction_name = TOTO
+			}
+			
+		}
+	}
+	focus = {
+		id = BRA_the_sa_alternative
+		x = 13
+		y = 2
+		cost = 6
+		prerequisite = {focus = BRA_demobastion}
+		mutually_exclusive = { focus = BRA_natofriendship}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_democracy
+		available = {
+   			has_government = democratic
+		}
+
+		completion_reward = {
+   		 	set_rule = { 
+				can_create_factions = true
+			}	
+			create_faction = SADA
+		}
+	}
+
+	focus = {
+		id = BRA_ademocraticcontinent
+		x = 19
+		y = 2
+		cost = 9
+		prerequisite = {focus = BRA_demobastion}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_democracy
+		available = {
+   			has_government = democratic
+		}
+
+		completion_reward = {
+			ARG = {
+				add_ideas =	democratic_influence
+			} 
+			BOL = {
+				add_ideas =	democratic_influence
+			} 
+			CHL = {
+				add_ideas =	democratic_influence
+			} 
+			COL = {
+				add_ideas =	democratic_influence
+			} 
+			ECU = {
+				add_ideas =	democratic_influence
+			} 
+			GYA = {
+				add_ideas =	democratic_influence
+			} 
+			PRU = {
+				add_ideas =	democratic_influence
+			} 
+			SUR = {
+				add_ideas =	democratic_influence
+			} 
+			URG = {
+				add_ideas =	democratic_influence
+			} 
+			VEN = {
+				add_ideas =	democratic_influence
+			} 		
+		}
+	}
+
+	focus = {
+		id = BRA_enforcedemocracy
+		x = 19
+		y = 3
+		cost = 10
+		prerequisite = {focus = BRA_ademocraticcontinent}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_democracy
+		available = {
+   			has_government = democratic
+		}
+
+		completion_reward = {
+   		 	if = {
+				limit = {
+					ARG = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = ARG
+				}
+			}	
+			if = {
+				limit = {
+					BOL = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = BOL
+				}
+			}	
+			if = {
+				limit = {
+					CHL = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = CHL
+				}
+			}
+			if = {
+				limit = {
+					COL = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = COL
+				}
+			}
+			if = {
+				limit = {
+					ECU = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = ECU
+				}
+			}
+			if = {
+				limit = {
+					GYA = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = GYA
+				}
+			}
+			if = {
+				limit = {
+					PRU = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = PRU
+				}
+			}
+			if = {
+				limit = {
+					SUR = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = SUR
+				}
+			}
+			if = {
+				limit = {
+					URG = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = URG
+				}
+			}
+			if = {
+				limit = {
+					VEN = {
+						NOT = {has_government = democratic}
+					}
+				}	
+				create_wargoal = {
+   			 		type = topple_government
+    				target = VEN
+				}
+			}
+		}
+	}
+	
+
+	focus = {
+		id = BRA_theotherlineofthought
+		x = 31
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_strike_at_democracy2
+		mutually_exclusive = { focus = BRA_demobastion focus = BRA_democracy_failed }
+		cost = 10
+		available = {
+   			
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+		    	ideology = democratic
+    	    	popularity = -0.10
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_radicalizationoftheideologies
+		x = 31
+		y = 2
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = {focus = BRA_theotherlineofthought}
+		cost = 5
+		available = {
+   		
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+		    	ideology = democratic
+    	    	popularity = -0.20
+			}
+			set_country_flag = bra_prep_for_2018
+		}
+	}
+
+	focus = {
+		id = BRA_2018election
+		x = 31
+		y = 3
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = {focus = BRA_radicalizationoftheideologies}
+		cost = 5
+		available = {
+			date > 2018.01.01
+			has_country_flag = BRA_2018ele
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+   			    ideology = democratic
+    			popularity = -0.2
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_the_path_to_communism
+		x = 27
+		y = 4
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = BRA_2018election}
+		cost = 5
+		available = {
+			has_country_flag = BRA_2018ele
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+   			    ideology = communist
+    			popularity = 0.3
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_the_path_to_communism
+		x = 27
+		y = 4
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = BRA_2018election}
+		cost = 5
+		available = {
+			
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+   			    ideology = communism
+    			popularity = 0.3
+			}	
+		}
+	}
+	focus = {
+		id = BRA_ruled_by_the_proleriat
+		x = 27
+		y = 5
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = BRA_the_path_to_communism}
+		cost = 5
+		available = {
+			
+		}
+
+		completion_reward = {
+			create_country_leader = {
+				name = BRA_Proleriat_Council
+				desc = "POLITICS_Proleriat_Council_DESC"
+				picture = GFX_portrait_SOV_supreme_soviet
+				expire = "2999"
+				ideology = marxism
+			}
+			set_politics = {
+				ruling_party = communist
+  			  	elections_allowed = no
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_lulismo
+		x = 27
+		y = 6
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_BRA_lulismo
+		prerequisite = {focus = BRA_ruled_by_the_proleriat}
+		cost = 5
+		available = {
+		
+		}
+
+		completion_reward = {
+   		 	create_country_leader = {
+				name = BRA_lula
+				desc = "POLITICS_LULA_DESC"
+				picture = GFX_portrait_BRA_Lula
+				expire = "2099.1.1"
+				ideology = socialism
+			}	
+		}
+	}
+	focus = {
+		id = BRA_spread_revolution
+		x = 29
+		y = 7
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = BRA_lulismo}
+		cost = 5
+		available = {
+			has_government = communism
+		}
+
+		completion_reward = {
+   		 	create_country_leader = {
+				name = BRA_lula
+				desc = "POLITICS_LULA_DESC"
+				picture = GFX_portrait_BRA_Lula
+				expire = "2099.1.1"
+				ideology = socialism
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_the_path_to_fascism
+		x = 35
+		y = 4
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_fascism
+		prerequisite = {focus = BRA_2018election}
+		cost = 5
+		available = {
+			has_country_flag = BRA_2018ele
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+   			    ideology = fascism
+    			popularity = 0.3
+			}	
+		}
+	}
+	focus = {
+		id = BRA_the_new_state
+		x = 35
+		y = 5
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_goal_support_fascism
+		prerequisite = {focus = BRA_the_path_to_fascism}
+		cost = 5
+		available = {
+			has_country_flag = BRA_2018ele
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+   			    ideology = fascism
+    			popularity = 0.3
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_democracy_failed
+		x = 41
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_strike_at_democracy2
+		mutually_exclusive = { focus = BRA_demobastion focus = BRA_theotherlineofthought }
+		cost = 5
+		available = {
+   			
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+		    	ideology = neutrality
+    	    	popularity = 0.10
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_king_will_not
+		x = 41
+		y = 2
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = {focus = BRA_democracy_failed}
+		cost = 5
+		available = {
+   		
+		}
+
+		completion_reward = {
+   		 	add_popularity = {
+		    	ideology = neutrality
+    	    	popularity = 0.20
+			}
+			set_country_flag = prepare_BRA_king
+			custom_effect_tooltip = BRA_prepare_king_tt
+		}
+	}
+
+	focus = {
+		id = BRA_launch_coup
+		x = 41
+		y = 3
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = {focus = BRA_king_will_not}
+		cost = 10
+		available = {
+   		
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_coup_king_tt
+		}
+	}
+
+	focus = {
+		id = BRA_coronation
+		x = 41
+		y = 5
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_launch_coup}
+		cost = 10
+		available = {
+			has_civil_war = no
+		}
+
+		completion_reward = {
+			create_country_leader = {
+				name = BRA_Luiz_Braganza
+				desc = "POLITICS_LUIZ_BRAGANZA_DESC"
+				picture = GFX_Portrait_Brazil_LuizEmperor
+				expire = "2999"
+				ideology = despotism
+			}
+			set_politics = {
+				ruling_party = neutrality
+  			  	elections_allowed = no
+    			long_name = BRA_neutrality_party_monarchy_long
+    			name = BRA_neutrality_party_monarchy
+			}	
+		}
+	}
+	focus = {
+		id = BRA_republicanscum
+		x = 41
+		y = 6
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_coronation}
+		cost = 10
+		available = {
+			has_civil_war = no
+		}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+  			  	elections_allowed = no
+    			long_name = BRA_neutrality_party_monarchy_long
+    			name = BRA_neutrality_party_monarchy
+			}	
+		}
+	}
+	focus = {
+		id = BRA_warwithuruguay
+		x = 38
+		y = 6
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_coronation focus = BRA_the_new_state}
+		cost = 10
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				owns_state = 300
+				is_in_faction_with = URU
+				has_war_with = URU
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit ={
+					country_exists = URU
+				}
+				create_wargoal = {
+    				type = annex_everything
+    				target = URU
+				}
+			}
+			else = {
+				add_state_claim = 300
+			}
+		}
+	}
+	focus = {
+		id = BRA_cisplatina
+		x = 38
+		y = 7
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_warwithuruguay}
+		cost = 10
+		available = {
+			owns_state = 300
+		}
+		bypass = {
+			OR = {
+				300 = {is_core_of = BRA}
+				is_in_faction_with = URU
+			}
+		}
+
+		completion_reward = {
+			300 = {add_core_of = BRA}
+		}
+	}
+	focus = {
+		id = BRA_revengeparaguay
+		x = 38
+		y = 8
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_cisplatina}
+		cost = 10
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				AND = {
+					owns_state = 301
+					owns_state = 688
+				}
+				is_in_faction_with = PAR
+				has_war_with = PAR
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit ={
+					country_exists = PAR
+				}
+				create_wargoal = {
+    				type = annex_everything
+    				target = PAR
+				}
+			}
+			else = {
+				add_state_claim = 301
+				add_state_claim = 688
+			}
+		}
+	}
+	focus = {
+		id = BRA_destroy_the_hermanos
+		x = 36
+		y = 9
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_revengeparaguay}
+		cost = 10
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				AND = {
+					owns_state = 510
+					owns_state = 509
+					owns_state = 508
+					owns_state = 511
+					owns_state = 278
+					owns_state = 512
+				}
+				is_in_faction_with = ARG
+				has_war_with = ARG
+			}
+		}
+		
+
+		completion_reward = {
+			if = {
+				limit ={
+					country_exists = ARG
+				}
+				create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = ARG
+				}
+			}
+			else = {
+				add_state_claim = 510
+				add_state_claim = 509
+				add_state_claim = 508
+				add_state_claim = 511
+				add_state_claim = 278
+				add_state_claim = 512
+			}
+		}
+	}
+	focus = {
+		id = BRA_the_peru-bolivian_threat
+		x = 36
+		y = 10
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_destroy_the_hermanos}
+		cost = 10
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				AND = {
+					owns_state = 487
+					owns_state = 302
+					owns_state = 491
+					owns_state = 494
+					owns_state = 492
+					owns_state = 303
+				}
+				is_in_faction_with = PER
+				has_war_with = PER
+				is_in_faction_with = BOL
+				has_war_with = BOL
+			}
+		}
+		
+
+		completion_reward = {
+			if = {
+				limit ={
+					country_exists = PER
+				}
+				create_wargoal = {
+    				type = annex_everything
+    				target = PER
+				}
+			}
+			else = {
+				add_state_claim = 491
+				add_state_claim = 494
+				add_state_claim = 492
+				add_state_claim = 303
+			}
+			if = {
+				limit ={
+					country_exists = BOL
+				}
+				create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = BOL
+				}
+			}
+			else = {
+				add_state_claim = 487
+				add_state_claim = 302
+			}
+		}
+	}
+	focus = {
+		id = BRA_establish_puppet_kingdom
+		x = 34
+		y = 11
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_the_peru-bolivian_threat}
+		cost = 10
+		available = {
+			owns_state = 487
+			owns_state = 302
+			owns_state = 491
+			owns_state = 494
+			owns_state = 492
+			owns_state = 303
+			has_government = neutrality
+		}
+		bypass = {
+			
+		}
+		
+
+		completion_reward = {
+			PBC = {
+				add_state_core = 487
+				add_state_core = 302
+				add_state_core = 491
+				add_state_core = 494
+				add_state_core = 492
+				add_state_core = 303
+			}
+			if = {
+				limit = {has_dlc = "No Steb Back"}
+				release_autonomy = {
+					target = PBC
+					autonomy_state = autonomy_personal_union
+					freedom_level = 0.5
+				}
+			}
+			else = {
+				release_puppet = PBC
+			}
+			
+		}
+	}
+	focus = {
+		id = BRA_control_andes
+		x = 36
+		y = 11
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_the_peru-bolivian_threat}
+		cost = 10
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+
+		completion_reward = {
+			if = {
+				limit ={
+					country_exists = PER
+				}
+				create_wargoal = {
+    				type = annex_everything
+    				target = PER
+				}
+			}
+			else = {
+				add_state_claim = 491
+				add_state_claim = 494
+				add_state_claim = 492
+				add_state_claim = 303
+			}
+			if = {
+				limit ={
+					country_exists = BOL
+				}
+				create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = BOL
+				}
+			}
+			else = {
+				add_state_claim = 487
+				add_state_claim = 302
+			}
+	}	}
+	focus = {
+		id = BRA_secure_the_venezuelan_oil
+		x = 40
+		y = 9
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_revengeparaguay}
+		cost = 10
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				AND = {
+					owns_state = 489
+					owns_state = 488
+					owns_state = 307
+				}
+				is_in_faction_with = VEN
+				has_war_with = VEN
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit ={
+					country_exists = VEN
+				}
+				create_wargoal = {
+    				type = annex_everything
+    				target = VEN
+				}
+			}
+			else = {
+				add_state_claim = 489
+				add_state_claim = 488
+				add_state_claim = 307
+			}
+		}
+	}
+	focus = {
+		id = BRA_invade_colombia
+		x = 40
+		y = 10
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BRA_secure_the_venezuelan_oil}
+		cost = 10
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				AND = {
+					owns_state = 486
+					owns_state = 493
+					owns_state = 306
+				}
+				is_in_faction_with = COL
+				has_war_with = COL
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit ={
+					country_exists = COL
+				}
+				create_wargoal = {
+    				type = annex_everything
+    				target = COL
+				}
+			}
+			else = {
+				add_state_claim = 486
+				add_state_claim = 493
+				add_state_claim = 306
+			}
+		}
+	}
+	
+}	
+
