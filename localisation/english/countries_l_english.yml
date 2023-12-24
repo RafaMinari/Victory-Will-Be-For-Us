@@ -49,6 +49,8 @@
  
  SOV_authoritarianism:0 "Russian Federation"
  SOV_authoritarianism_DEF:0 "the Russian Federation"
+ SOV_conservatism:0 "Russian Federation"
+ SOV_conservatism_DEF:0 "the Russian Federation" 
  SOV_fascism:0 "Russian Empire"
  SOV_fascism_DEF:0 "the Russian Empire"
  SOV_democratic:0 "Russian Federation"
