@@ -682,55 +682,6 @@ capital = 219
 
 starting_train_buffer = 3.0
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "SOV_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "SOV_1936_nsb"
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SOV_1936_naval_mtg"
-	else = {
-		set_naval_oob = "SOV_1936_naval_legacy"
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SOV_1936_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			aa_lmg = 1
-			aa_cannon_1 = 1
-			early_bombs = 1
-			engines_1 = 1
-			engines_2 = 1
-			iw_medium_airframe = 1
-			iw_large_airframe = 1
-			basic_small_airframe = 1
-			basic_medium_airframe = 1
-			aircraft_construction = 1
-		}
-	else = {
-		set_air_oob = "SOV_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			fighter1 = 1
-			early_bomber = 1
-			strategic_bomber1 = 1
-			naval_bomber1 = 1
-		}
-	}
-}
-
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.3
@@ -1005,60 +956,6 @@ add_ideas = {
 	add_state_claim = 766 #SOUTHERN BESSARABIA (ROM
 	#MR pact stuff end
 
-	#Germany soviet treaty (Tank templates unlocked at the bottom of this file)
-	GER = {
-		add_opinion_modifier = {
-			target = SOV
-			modifier = sov_ger_treaty
-		}
-		add_opinion_modifier = {
-			target = SOV
-			modifier = sov_ger_treaty_trade
-		}
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		add_tech_bonus = {
-			name = med_armor_bonus
-			ahead_reduction = 2
-			category = cat_medium_armor
-		}
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 1.0
-			uses = 1
-			category = armor
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 1.0
-			uses = 2
-			category = armor
-		}
-	}
-
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "SOV_1939_air_bba"
-			set_technology = {
-				basic_large_airframe = 1
-			}
-		else = {
-			set_air_oob = "SOV_1939_air_legacy"
-			set_technology = {
-				CAS1 = 1
-				tactical_bomber1 = 1
-			}
-		}
-	}
-
 	#1936
 	complete_national_focus = SOV_heavy_industry #35
 	unlock_national_focus = SOV_the_path_of_marxism_leninism #35
@@ -1122,14 +1019,6 @@ add_ideas = {
 	add_to_variable = { SOV_the_politburo_political_power_factor = 0.05 }
 	add_to_variable = { SOV_the_politburo_max_surrender_limit_offset = 0.05 }
 	add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
-	
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SOV_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SOV_1939_naval_legacy"
-		}
-	}
 
 	set_technology = {
 		interwar_artillery = 1
@@ -1172,28 +1061,6 @@ add_ideas = {
 		concentrated_industry = 1
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-			improved_light_tank = 1 
-			basic_heavy_tank = 1    # Should be available in 1936 (T-35)
-			basic_medium_tank = 1 # Should be available in 1936 (T-28)
-		}
-		set_oob = "SOV_1939"
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			improved_light_tank_chassis = 1
-			basic_heavy_tank_chassis = 1
-			basic_medium_tank_chassis = 1 
-		}
-		set_oob = "SOV_1939_nsb"
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -1276,7 +1143,7 @@ if = {
 	limit = {
 		has_dlc = "By Blood Alone"
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "I-15" #
 		type = small_plane_airframe_0
 		modules = {
@@ -1286,7 +1153,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "I-16" #
 		type = small_plane_airframe_1
 		modules = {
@@ -1296,7 +1163,7 @@ if = {
 		}
 		icon = "GFX_SOV_fighter1_medium"
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "DB-3" #
 		type = medium_plane_airframe_0
 		modules = {
@@ -1307,7 +1174,7 @@ if = {
 		}
 		icon = "GFX_SOV_early_bomber_medium"
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "TB-3" #
 		type = large_plane_airframe_0
 		modules = {
@@ -1318,7 +1185,7 @@ if = {
 		}
 		icon = "GFX_SOV_transport_plane_equipment_1_medium"
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "ANT-40" #
 		type = medium_plane_airframe_1
 		modules = {
@@ -1335,7 +1202,7 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "T-27"
 		type = light_tank_chassis_0
 		parent_version = 0
@@ -1354,7 +1221,7 @@ if = {
 		icon = "GFX_gwtank_medium"
 	}
 
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "T-26TU mod. 1933"
 		type = light_tank_chassis_1
 		parent_version = 0
@@ -1372,7 +1239,7 @@ if = {
 		}
 		icon = "GFX_SOV_basic_light_tank_medium"
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "BT-5"
 		type = light_tank_chassis_1
 		parent_version = 1
@@ -1390,7 +1257,7 @@ if = {
 		icon = "GFX_SOV_improved_light_tank_medium" #More similar to BT-7 than to T-26
 		model = "SOV_light_armor_entity" #More similar to BT-7 than to T-26
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "BT-7"
 		type = light_tank_chassis_2
 		parent_version = 0
@@ -1408,7 +1275,7 @@ if = {
 		icon = "GFX_SOV_improved_light_tank_medium"
 	}
 
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "T-28"
 		type = medium_tank_chassis_0
 		parent_version = 0
@@ -1429,7 +1296,7 @@ if = {
 		icon = "GFX_SOV_basic_heavy_tank_medium" #Closer to T-35
 		#model = "SOV_heavy_armor_0" #Closer to T-35 but dependant on Soviet Tanks DLC
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "T-35"
 		type = heavy_tank_chassis_0
 		parent_version = 0
@@ -1454,7 +1321,7 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Series I Debakrist"
 		type = submarine_1
 		upgrades = {
@@ -1465,7 +1332,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Series IX Srednyaya"
 		type = submarine_2
 		upgrades = {
@@ -1475,7 +1342,7 @@ if = {
 			sub_torpedo_upgrade = 1
 		}
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Leningrad & Minsk Class"
 		type = destroyer_1
 		upgrades = {
@@ -1489,7 +1356,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	create_equipment_variant = {			
+	#create_equipment_variant = {			
 		name = "AG Class"
 		type = ship_hull_submarine_1
 		name_group = SOV_SS_SHCHUKA
@@ -1501,7 +1368,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Series I Debakrist"			# represents Debakrist, B class, L-55 sub
 		type = ship_hull_submarine_1
 		name_group = SOV_SS_SHCHUKA
@@ -1513,7 +1380,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Series II Leninets"				# represents Leninets series II, XI
 		type = ship_hull_submarine_2
 		name_group = SOV_SS_LENINETS
@@ -1524,7 +1391,7 @@ if = {
 			rear_1_custom_slot = ship_mine_layer_sub
 		}
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Series V Shchuka"				# represents Shchuka series III, V, V-bis, V-bis-2
 		type = ship_hull_submarine_1
 		name_group = SOV_SS_SHCHUKA
@@ -1536,7 +1403,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Series IX Srednyaya"				# 'Stalinets', series IX, IX-bis, IX-bis-2 and P-class
 		type = ship_hull_submarine_2
 		name_group = SOV_SS_STALINETS
@@ -1547,7 +1414,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Series X Shchuka"				
 		type = ship_hull_submarine_1
 		name_group = SOV_SS_SHCHUKA
@@ -1559,7 +1426,7 @@ if = {
 		}
 	}
 	# Destroyers #
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Orfey Class"						# represents Yakov Sverdlov, Frunze, and Orfey classes
 		type = ship_hull_light_1
 		name_group = SOV_DD_HISTORICAL
@@ -1576,7 +1443,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Fidonisi Class"						# represents Fidonisi and Izyaslav classes
 		type = ship_hull_light_1
 		name_group = SOV_DD_HISTORICAL
@@ -1593,7 +1460,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Leningrad & Minsk Class"				
 		type = ship_hull_light_2
 		name_group = SOV_DD_HISTORICAL
@@ -1609,7 +1476,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Bug Class"					# minelayer
 		type = ship_hull_light_1
 		name_group = SOV_MINELAYERS_HISTORICAL
@@ -1626,7 +1493,7 @@ if = {
 		}
 	}
 	# Light Cruisers #
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Komintern Class"
 		type = ship_hull_cruiser_1
 		name_group = SOV_MINELAYERS_HISTORICAL
@@ -1643,7 +1510,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Chervona Ukraina Class"
 		type = ship_hull_cruiser_1
 		name_group = SOV_CL_HISTORICAL
@@ -1659,7 +1526,7 @@ if = {
 			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Marti Class"
 		type = ship_hull_cruiser_1				# minelayer
 		name_group = SOV_MINELAYERS_HISTORICAL
@@ -1677,7 +1544,7 @@ if = {
 		}
 	}
 	# Heavy Cruisers #
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Kirov Class"
 			type = ship_hull_cruiser_2
 			name_group = SOV_CA_HISTORICAL
@@ -1695,7 +1562,7 @@ if = {
 			}
 		}
 	# Battleships #
-	create_equipment_variant = {
+	#create_equipment_variant = {
 		name = "Marat Class"					
 		type = ship_hull_heavy_1
 		name_group = SOV_BB_HISTORICAL
@@ -1722,7 +1589,7 @@ if = {
 		limit = {
 			has_dlc = "By Blood Alone"
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "I-153" #
 			type = small_plane_airframe_0
 			modules = {
@@ -1732,7 +1599,7 @@ if = {
 				special_type_slot_1 = empty
 			}
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "I-16 Type 10" #
 			type = small_plane_airframe_1
 			modules = {
@@ -1742,7 +1609,7 @@ if = {
 				special_type_slot_1 = empty
 			}
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "MBR-2" #
 			type = small_plane_cas_airframe_1
 			modules = {
@@ -1753,7 +1620,7 @@ if = {
 				special_type_slot_2 = fuel_tanks_small
 			}
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Pe-8" #
 			type = large_plane_airframe_1
 			modules = {
@@ -1768,7 +1635,7 @@ if = {
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		# Ship variants #
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Series X Shchuka"
 			type = submarine_2
 			upgrades = {
@@ -1779,7 +1646,7 @@ if = {
 			}
 		}
 
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Maxim Gorky Class"
 			type = heavy_cruiser_2
 			upgrades = {
@@ -1793,7 +1660,7 @@ if = {
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Series XIII Leninets"				
 			type = ship_hull_submarine_2
 			name_group = SOV_SS_LENINETS
@@ -1804,7 +1671,7 @@ if = {
 				rear_1_custom_slot = ship_mine_layer_sub
 			}
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Series XIV K-Class"				
 			type = ship_hull_submarine_3
 			name_group = SOV_SS_SHCHUKA
@@ -1818,7 +1685,7 @@ if = {
 			}
 		}
 		# Destroyers #
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Gnevnyy Class"				
 			type = ship_hull_light_2
 			name_group = SOV_DD_HISTORICAL
@@ -1835,7 +1702,7 @@ if = {
 			}
 			obsolete = yes
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Soobrazitelnyi Class"				
 			type = ship_hull_light_3
 			name_group = SOV_DD_HISTORICAL
@@ -1851,7 +1718,7 @@ if = {
 				rear_1_custom_slot = ship_depth_charge_1
 			}
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "Tashkent Class"				
 			type = ship_hull_light_3
 			name_group = SOV_DD_HISTORICAL
@@ -1872,7 +1739,7 @@ if = {
 		limit = {
 			has_dlc = "No Step Back"
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "A-20"
 			type = medium_tank_chassis_1
 			parent_version = 0
@@ -1890,7 +1757,7 @@ if = {
 			}
 			icon = "GFX_SOV_basic_medium_tank_medium"
 		}
-		create_equipment_variant = {
+		#create_equipment_variant = {
 			name = "KV-1"
 			type = heavy_tank_chassis_1
 			parent_version = 0

@@ -53,23 +53,27 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 300 y = 305 }
-			size = { width = 240 height = 60 }
-			clipping = yes
+			position = { x = 339 y = 297 }
+			size = { width = 200 height = 80 }
 			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 0 bottom = 0}
-				   
+			clipping = yes
+			margin = { top = 6 left = 0 bottom = 5 right = 0}
+			
 			background = {
-				name = "Background"  
-				spriteType =""
-				position = { x = 0 y = 0 }
+				name = "Background"        
+				quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
 			}
-				   
+			
+#			background = {
+#				name = "Background"		
+#				spriteType ="GFX_pol_piechart_bg"
+#			}
+			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = -20 y = -5 }
-				size = { width = 230 height = 60 }
-				slotsize = { width = 230 height = 14 }
+				position = { x = -55 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 230 height = 16 }
 				format = "UPPER_LEFT"
 			}
 		}
