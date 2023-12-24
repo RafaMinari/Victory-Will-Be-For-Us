@@ -4,18 +4,6 @@
 ####
 
 
-#You don't want Russian party names? Just remove these lines
-set_party_name = {
-	ideology = communism
-	long_name = SOV_communism_party_russian_long
-	name = SOV_communism_party_russian
-}
-set_party_name = {
-	ideology = fascism
-	long_name = SOV_fascism_party_russian_long
-	name = SOV_fascism_party_russian
-}
-
 #COUNTRY LEADERS
 recruit_character = SOV_vladimir_putin
 recruit_character = SOV_iosif_stalin
@@ -1229,21 +1217,25 @@ add_ideas = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarianism
 	last_election = "2012.3.4"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	fascism = 2
-	communism = 88
+	communism = 0
+	socialism = 0
+	social_democracy = 0
+	liberalism = 0
+	centrism = 0
+	conservatism = 0
+	nationalism = 0
+	authoritarianism = 100
+	neo_fascism = 0
 }
 
-create_faction = Comintern
-add_to_faction = SOV
-add_to_faction = MON
-add_to_faction = TAN
+create_faction = CSTO
+add_to_faction = BLR
 
 if = {
 	limit = {

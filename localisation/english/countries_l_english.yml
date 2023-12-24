@@ -46,6 +46,9 @@
  ENG_communism_subject_DEF:0 "the Socialist Republic of Great Britain"
  ENG_SOV_communism_subject:0 "British Soviet Socialist Republic"
  ENG_SOV_communism_subject_DEF:0 "the British Soviet Socialist Republic"
+ 
+ SOV_authoritarianism:0 "Russian Federation"
+ SOV_authoritarianism_DEF:0 "the Russian Federation"
  SOV_fascism:0 "Russian Empire"
  SOV_fascism_DEF:0 "the Russian Empire"
  SOV_democratic:0 "Russian Federation"
@@ -58,6 +61,7 @@
  SOV_democratic_ADJ:0 "Russian"
  SOV_neutrality_ADJ:0 "Russian"
  SOV_communism_ADJ:0 "Soviet"
+ 
  SOV_autonomy_dominion:0 "Russian Dominion"
  SOV_autonomy_dominion_DEF:0 "the Russian Dominion"
  SOV_autonomy_colony:0 "$OVERLORDADJ$ Russia"
