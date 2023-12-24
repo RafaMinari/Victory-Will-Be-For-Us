@@ -191,6 +191,7 @@ add_to_faction = LAT
 add_to_faction = EST
 add_to_faction = LUX
 add_to_faction = GRE
+add_to_faction = CZE
 add_to_faction = TUR
 
 
