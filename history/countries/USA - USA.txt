@@ -202,7 +202,7 @@ add_to_faction = TUR
 set_convoys = 500
 
 set_party_name = {
-	ideology = liberal
+	ideology = liberalism
 	long_name = USA_liberal_party_long
 	name = USA_liberal_party_
 }
@@ -213,16 +213,21 @@ set_party_name = {
 }
 
 set_politics = {
-	ruling_party = liberal
+	ruling_party = liberalism
 	last_election = "2012.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	liberal = 40
-	conservative = 50
+	communism = 0
+	socialism = 0
+	social_democracy = 0
+	liberalism = 50
 	centrism = 9
-	socialism = 1
+	conservatism = 41
+	nationalism = 0
+	authoritarianism = 0
+	neo_fascism = 0
 }
 
 add_ideas = {
