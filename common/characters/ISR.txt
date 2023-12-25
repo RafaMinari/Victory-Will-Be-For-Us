@@ -1,0 +1,15 @@
+characters = {
+	ISR_benjamin_nethanyu = {
+		name = ISR_benjamin_nethanyu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ISR_Benjamin_Nethanyu
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2030.3.1.1"
+			id = -1
+		}
+	}
