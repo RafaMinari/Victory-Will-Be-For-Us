@@ -1,0 +1,1049 @@
+focus_tree = {
+	id = vfu-isr
+	continuous_focus_position = { x = -40 y = 2350 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ISR
+		}
+	}
+	#Upgrade "Route 4"
+	focus = {
+		id = ISR_upgraderoute4
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 40
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_dimonasnuclearreactor  } prerequisite = { focus = ISR_cooperation_supervision  }
+	}
+
+	#Operation Protective Edge
+	focus = {
+		id = ISR_operation_protective_edge
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 20
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			declare_war_on = {
+			    target = PAL
+			    type = annex_everything
+			}
+			add_manpower = 10000
+			
+			
+		}
+		will_lead_to_war_with = PAL
+	}
+
+	#Uncle Sam's Aid
+	focus = {
+		id = ISR_unclesamsaid
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 22
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_operation_protective_edge  }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1000
+			    producer = USA
+			}
+			
+			
+			
+		}
+	}
+
+	#Strengthening Ties With The EU
+	focus = {
+		id = ISR_strengthening_ties_with_the_eu
+		icon = GFX_ISR_strengthening_ties_with_the_eu-97
+		x = 7
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_join_the_southern_gas_corridor  }
+	}
+
+	#Treaty Of Jerusalem
+	focus = {
+		id = ISR_treaty_of_jerusalem
+		icon = GFX_goal_generic_dangerous_deal
+		x = 8
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_two_states_solution  } prerequisite = { focus = ISR_strengthening_ties_with_the_eu  }
+	}
+
+	#NATO Application
+	focus = {
+		id = ISR_nato_application
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 10
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_treaty_of_jerusalem  } prerequisite = { focus = ISR_blueprint_negev  }
+	}
+
+	#Prepose The Nationality Bill
+	focus = {
+		id = ISR_prepose_the_nationality_bill
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 18
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_operation_protective_edge  }
+	}
+
+	#The 2015 Election
+	focus = {
+		id = ISR_the_2015_election
+		icon = GFX_focus_generic_military_academy
+		x = 20
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_prepose_the_nationality_bill  } prerequisite = { focus = ISR_unclesamsaid  }
+	}
+
+	#Develop The Gas Reserves
+	focus = {
+		id = ISR_develop_the_gas_reserves
+		icon = GFX_ISR_develop_the_gas_reserves-262058
+		x = 7
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_return_of_the_labour_party  }
+	}
+
+	#Return Of The Labour Party
+	focus = {
+		id = ISR_return_of_the_labour_party
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 8
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_the_2015_election  }
+		mutually_exclusive = { focus = ISR_thedawnofhabaithayeudi  } mutually_exclusive = { focus = ISR_inyhwhwetrust  }
+	}
+
+	#Continue Oslo Talks
+	focus = {
+		id = ISR_continue_oslo_talks
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_return_of_the_labour_party  }
+	}
+
+	#Join The Southern Gas Corridor
+	focus = {
+		id = ISR_join_the_southern_gas_corridor
+		icon = GFX_focus_usa_focus_on_europe
+		x = 7
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_develop_the_gas_reserves  }
+	}
+
+	#Abolish The Settlements
+	focus = {
+		id = ISR_abolish_the_settlements
+		icon = GFX_ISR_abolish_the_settlements-251
+		x = 9
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_continue_oslo_talks  }
+	}
+
+	#Two States Solution
+	focus = {
+		id = ISR_two_states_solution
+		icon = GFX_focus_RAJ_two_nation_theory
+		x = 9
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_abolish_the_settlements  }
+	}
+
+	#Support JCPOA
+	focus = {
+		id = ISR_support_jcpoa
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 11
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = ISR_return_of_the_labour_party  }
+	}
+
+	#Nationalize Key Cooprates
+	focus = {
+		id = ISR_nationalize_key_cooprates
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 11
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_support_jcpoa  }
+	}
+
+	#Blueprint Negev
+	focus = {
+		id = ISR_blueprint_negev
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 11
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_nationalize_key_cooprates  }
+	}
+
+	#The Dawn Of "Ha'Bait Ha'Yeudi"
+	focus = {
+		id = ISR_thedawnofhabaithayeudi
+		icon = GFX_ISR_thedawnofhabaithayeudi-428
+		x = 15
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_the_2015_election  }
+		mutually_exclusive = { focus = ISR_return_of_the_labour_party  } mutually_exclusive = { focus = ISR_inyhwhwetrust  }
+	}
+
+	#Deal With The Devil
+	focus = {
+		id = ISR_deal_with_the_devil
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 13
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_sell_weapons_to_the_gcc  }
+	}
+
+	#Prepare For War With Iran
+	focus = {
+		id = ISR_prepare_for_war_with_iran
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 12
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_nato_application  focus = ISR_deal_with_the_devil  }
+	}
+
+	#Join Operation Inherent Resolve
+	focus = {
+		id = ISR_join_operation_inherent_resolve
+		icon = GFX_goal_generic_territory_or_war
+		x = 9
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_nato_application  }
+	}
+
+	#Pave The Road To Damascus
+	focus = {
+		id = ISR_pave_the_road_to_damascus
+		icon = GFX_ISR_pave_the_road_to_damascus-262129
+		x = 9
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_join_operation_inherent_resolve  }
+	}
+
+	#Develop The Nuclear Arsenal
+	focus = {
+		id = ISR_develop_the_nuclear_arsenal
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 12
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_prepare_for_war_with_iran  }
+	}
+
+	#The Enemy Of My Enemy Is My Friend
+	focus = {
+		id = ISR_the_enemy_of_my_enemy_is_my_friend
+		icon = GFX_ISR_the_enemy_of_my_enemy_is_my_friend-262021
+		x = 14
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_deal_with_the_devil  }
+	}
+
+	#Preemptive Strike
+	focus = {
+		id = ISR_preemptive_strike
+		icon = GFX_ISR_preemptive_strike-262013
+		x = 13
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = ISR_develop_the_nuclear_arsenal  } prerequisite = { focus = ISR_the_enemy_of_my_enemy_is_my_friend  }
+	}
+
+	#Abolish Oslo Accords
+	focus = {
+		id = ISR_abolish_oslo_accords
+		icon = GFX_ISR_abolish_oslo_accords-270
+		x = 17
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_thedawnofhabaithayeudi  }
+	}
+
+	#Revenge 2014
+	focus = {
+		id = ISR_revenge_2014
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 16
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_abolish_oslo_accords  }
+	}
+
+	#Hebrew Homeland
+	focus = {
+		id = ISR_hebrew_homeland
+		icon = GFX_ISR_hebrew_homeland-88
+		x = 19
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_thedawnofhabaithayeudi  focus = ISR_inyhwhwetrust  }
+	}
+
+	#Seize Control Of The West Bank
+	focus = {
+		id = ISR_seize_control_of_the_west_bank
+		icon = GFX_focus_generic_adriatic_sea_focus
+		x = 18
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_abolish_oslo_accords  } prerequisite = { focus = ISR_hebrew_homeland  }
+	}
+
+	#The End Of Gaza
+	focus = {
+		id = ISR_the_end_of_gaza
+		icon = GFX_ISR_the_end_of_gaza-412
+		x = 16
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_revenge_2014  } prerequisite = { focus = ISR_deal_with_international_objection  }
+	}
+
+	#Jewish Supremacy
+	focus = {
+		id = ISR_jewish_supremacy
+		icon = GFX_focus_generic_concessions
+		x = 19
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_hebrew_homeland  }
+	}
+
+	#In Yhwh We Trust!
+	focus = {
+		id = ISR_inyhwhwetrust
+		icon = GFX_focus_generic_concessions
+		x = 23
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_the_2015_election  }
+		mutually_exclusive = { focus = ISR_return_of_the_labour_party  } mutually_exclusive = { focus = ISR_thedawnofhabaithayeudi  }
+	}
+
+	#The Third Temple
+	focus = {
+		id = ISR_the_third_temple
+		icon = GFX_ISR_the_third_temple-262112
+		x = 19
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_seize_control_of_the_west_bank  } prerequisite = { focus = ISR_jewish_supremacy  focus = ISR_secure_the_holy_sites  } prerequisite = { focus = ISR_jewish_supremacy  }
+	}
+
+	#Crusades Of Our Own
+	focus = {
+		id = ISR_crusades_of_our_own
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 21
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_inyhwhwetrust  }
+	}
+
+	#Forced Assimilation
+	focus = {
+		id = ISR_forced_assimilation
+		icon = GFX_focus_spr_class_war
+		x = 17
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = ISR_seize_control_of_the_west_bank  } prerequisite = { focus = ISR_the_end_of_gaza  }
+	}
+
+	#Sell Weapons To The GCC
+	focus = {
+		id = ISR_sell_weapons_to_the_gcc
+		icon = GFX_focus_generic_combined_arms
+		x = 13
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_thedawnofhabaithayeudi  }
+	}
+
+	#Proclaim Greater Israel
+	focus = {
+		id = ISR_proclaim_greater_israel
+		icon = GFX_goal_demand_sudetenland
+		x = 17
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_forced_assimilation  }
+	}
+
+	#Secure The Holy Sites
+	focus = {
+		id = ISR_secure_the_holy_sites
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 21
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_crusades_of_our_own  }
+	}
+
+	#Deal With International Objection
+	focus = {
+		id = ISR_deal_with_international_objection
+		icon = GFX_focus_chi_proclaim_rival_government
+		x = 15
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_sell_weapons_to_the_gcc  }
+	}
+
+	#Leave The UN
+	focus = {
+		id = ISR_leave_the_un
+		icon = GFX_focus_usa_union_representation_act
+		x = 15
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_deal_with_international_objection  }
+	}
+
+	#Cross The River
+	focus = {
+		id = ISR_cross_the_river
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 21
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_secure_the_holy_sites  }
+	}
+
+	#Militarise Society
+	focus = {
+		id = ISR_militarise_society
+		icon = GFX_focus_generic_manpower
+		x = 17
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ISR_proclaim_greater_israel  }
+	}
+
+	#Fulfill The Prophecy
+	focus = {
+		id = ISR_fulfill_the_prophecy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 24
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ISR_inyhwhwetrust  }
+	}
+
+	#Convert The Masses
+	focus = {
+		id = ISR_convert_the_masses
+		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
+		x = 23
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ISR_fulfill_the_prophecy  }
+		mutually_exclusive = { focus = ISR_the_chosen_people  }
+	}
+
+	#Project Genesis
+	focus = {
+		id = ISR_project_genesis
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		x = 23
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ISR_convert_the_masses  }
+	}
+
+	#The Chosen People
+	focus = {
+		id = ISR_the_chosen_people
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 25
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ISR_fulfill_the_prophecy  }
+		mutually_exclusive = { focus = ISR_convert_the_masses  }
+	}
+
+	#Rabbinical Education
+	focus = {
+		id = ISR_rabbinical_education
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = 25
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ISR_the_chosen_people  }
+	}
+
+	#God's Army
+	focus = {
+		id = ISR_godsarmy
+		icon = GFX_ISR_godsarmy-262075
+		x = 24
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_rabbinical_education  focus = ISR_project_genesis  }
+	}
+
+	#Where It All Started
+	focus = {
+		id = ISR_where_it_all_started
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 22
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = ISR_cross_the_river  } prerequisite = { focus = ISR_godsarmy  }
+	}
+
+	#Trust In God's Plan
+	focus = {
+		id = ISR_trustingodsplan
+		icon = GFX_focus_usa_voter_registration_act
+		x = 27
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_inyhwhwetrust  }
+	}
+
+	#Invite The Ancient Royals
+	focus = {
+		id = ISR_invite_the_ancient_royals
+		icon = GFX_focus_generic_royal_wedding
+		x = 27
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_trustingodsplan  }
+	}
+
+	#Our "Closest Ally"
+	focus = {
+		id = ISR_ourclosestally
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 27
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = ISR_invite_the_ancient_royals  }
+	}
+
+	#Join The Regional Effort
+	focus = {
+		id = ISR_join_the_regional_effort
+		icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+		x = 25
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_godsarmy  }
+	}
+
+	#The Tabriz Pact
+	focus = {
+		id = ISR_the_tabriz_pact
+		icon = GFX_ISR_the_tabriz_pact-262073
+		x = 27
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_ourclosestally  } prerequisite = { focus = ISR_join_the_regional_effort  }
+	}
+
+	#Colonize The Colonizer
+	focus = {
+		id = ISR_colonize_the_colonizer
+		icon = GFX_focus_attack_britain
+		x = 15
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_the_enemy_of_my_enemy_is_my_friend  } prerequisite = { focus = ISR_leave_the_un  }
+	}
+
+	#War Against Christ
+	focus = {
+		id = ISR_war_against_christ
+		icon = GFX_ISR_war_against_christ-97
+		x = 27
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ISR_the_tabriz_pact  }
+	}
+
+	#Likud Wins Again
+	focus = {
+		id = ISR_likud_wins_again
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 32
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_the_2015_election  }
+		mutually_exclusive = { focus = ISR_return_of_the_labour_party  } mutually_exclusive = { focus = ISR_thedawnofhabaithayeudi  } mutually_exclusive = { focus = ISR_inyhwhwetrust  }
+	}
+
+	#Discard The Nationality Bill
+	focus = {
+		id = ISR_discard_the_nationality_bill
+		icon = GFX_ISR_discard_the_nationality_bill-262024
+		x = 5
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ISR_return_of_the_labour_party  }
+	}
+
+	#Expand The Law Of Return
+	focus = {
+		id = ISR_expand_the_law_of_return
+		icon = GFX_goal_generic_national_unity
+		x = 5
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ISR_discard_the_nationality_bill  }
+	}
+
+	#International Investments
+	focus = {
+		id = ISR_international_investments
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 5
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_expand_the_law_of_return  }
+	}
+
+	#Ariel University
+	focus = {
+		id = ISR_ariel_university
+		icon = GFX_focus_research2
+		x = 40
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_beershevatechinstitute  }
+	}
+
+	#Develop The West Bank
+	focus = {
+		id = ISR_develop_the_west_bank
+		icon = GFX_focus_generic_industry_3
+		x = 19
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_the_third_temple  }
+	}
+
+	#The Four Year Plan
+	focus = {
+		id = ISR_the_four_year_plan
+		icon = GFX_focus_generic_africa_factory
+		x = 40
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Industrial Park Of Haifa
+	focus = {
+		id = ISR_industrial_park_of_haifa
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 38
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_the_four_year_plan  }
+	}
+
+	#All Roads Lead To Jerusalem
+	focus = {
+		id = ISR_all_roads_lead_to_jerusalem
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 40
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_the_four_year_plan  }
+	}
+
+	#Invest in Rafael
+	focus = {
+		id = ISR_invest_in_rafael
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 42
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_the_four_year_plan  }
+	}
+
+	#Foreign Donations
+	focus = {
+		id = ISR_foreign_donations
+		icon = GFX_focus_mex_privatisation
+		x = 41
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_all_roads_lead_to_jerusalem  } prerequisite = { focus = ISR_invest_in_rafael  }
+	}
+
+	#Gas In The Sea
+	focus = {
+		id = ISR_gas_in_the_sea
+		icon = GFX_goal_generic_oil_refinery
+		x = 39
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_industrial_park_of_haifa  } prerequisite = { focus = ISR_all_roads_lead_to_jerusalem  }
+	}
+
+	#Industrial Park Of Ashkelon
+	focus = {
+		id = ISR_industrial_park_of_ashkelon
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 38
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_industrial_park_of_haifa  }
+	}
+
+	#Make The Desert Bloom
+	focus = {
+		id = ISR_make_the_desert_bloom
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 40
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_all_roads_lead_to_jerusalem  }
+	}
+
+	#Invest in Elbit
+	focus = {
+		id = ISR_invest_in_elbit
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 42
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_invest_in_rafael  }
+	}
+
+	#Dimona's Nuclear Reactor
+	focus = {
+		id = ISR_dimonasnuclearreactor
+		icon = GFX_ISR_dimonasnuclearreactor-422
+		x = 41
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_make_the_desert_bloom  } prerequisite = { focus = ISR_invest_in_elbit  }
+	}
+
+	#Be'er Sheva Tech Institute
+	focus = {
+		id = ISR_beershevatechinstitute
+		icon = GFX_focus_research
+		x = 40
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ISR_upgraderoute4  }
+	}
+
+	#Cooperation Supervision
+	focus = {
+		id = ISR_cooperation_supervision
+		icon = GFX_focus_generic_industry_2
+		x = 39
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_industrial_park_of_ashkelon  } prerequisite = { focus = ISR_make_the_desert_bloom  }
+	}
+
+	#Tel Aviv Metropolis
+	focus = {
+		id = ISR_tel_aviv_metropolis
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 37
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_industrial_park_of_ashkelon  }
+	}
+
+	#Invest in IAI
+	focus = {
+		id = ISR_invest_in_iai
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 43
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_invest_in_elbit  }
+	}
+
+	#Excavations Project
+	focus = {
+		id = ISR_excavations_project
+		icon = GFX_goal_generic_construction2
+		x = 37
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_tel_aviv_metropolis  }
+	}
+
+	#Mass Production
+	focus = {
+		id = ISR_mass_production
+		icon = GFX_goal_generic_production
+		x = 43
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ISR_invest_in_iai  }
+	}
+
+}
