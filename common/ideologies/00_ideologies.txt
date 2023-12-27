@@ -78,8 +78,6 @@ ideologies = {
 
 			anarchist_communism = {
 			}
-			chinese_communism = {
-			}
 		}
 
 		dynamic_faction_names = {
@@ -90,7 +88,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 110 0 0 }
+		color = { 255 0 0 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
