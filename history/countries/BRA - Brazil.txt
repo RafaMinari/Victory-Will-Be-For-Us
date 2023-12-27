@@ -1,0 +1,23 @@
+﻿capital = 505
+
+
+set_politics = {
+		ruling_party = liberalism
+		last_election = "2010.10.31"
+		election_frequency = 48
+		elections_allowed = yes
+		long_name = BRA_pt_long
+		name = BRA_pt
+	}
+
+
+
+set_popularities = {
+	liberalism = 56
+	socialism = 4
+	authoritarian = 15
+	conservative = 25
+}
+
+recruit_character = BRA_dilma
+recruit_character = BRA_Proleriat_Council
