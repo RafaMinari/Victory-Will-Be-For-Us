@@ -1,0 +1,16 @@
+characters = {
+	UKR_viktor_yanukovych = {
+		name = UKR_viktor_yanukovych
+		portraits = {
+			civilian = {
+				large = GFX_portrait_UKR_Viktor_Yanukovych
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = {  }
+			expire = "2030.3.1.1"
+			id = -1
+		}
+	}
+}	

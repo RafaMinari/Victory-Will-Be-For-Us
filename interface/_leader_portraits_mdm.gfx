@@ -116,6 +116,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SOV/Portrait_Vladimir_Putin.dds"
 	}
 	
+	#Ukraine
+	spriteType = {
+		name = "GFX_portrait_UKR_Viktor_Yanukovych"
+		texturefile = "gfx/leaders/UKR/Portrait_Viktor_Yanukovych.png"
+	}	
+	
 	#Brazil
 	spriteType = {
 		name = "GFX_portrait_BRA_dilma"

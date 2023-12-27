@@ -1,4 +1,4 @@
-﻿capital = 622
+﻿capital = 608
 
 set_stability = 0.7
 set_war_support = 0.3
@@ -24,10 +24,10 @@ set_popularities = {
 }
 
 add_ideas = {
-	PRC_onechild_policy
+	PRC_one_child_policy
 	PRC_belt_and_road_initiative
 	PRC_one_china_policy
-	PRC_ruralurban_wealth_disparities
+	PRC_rural_urban_wealth_disparities
 	PRC_worlds_factory
 }
 

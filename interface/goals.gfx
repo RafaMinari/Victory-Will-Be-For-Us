@@ -169,7 +169,31 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_focus_PRC_the_paramount_leader_of_china"
 	texturefile = "gfx/interface/goals/focus_PRC_the_paramount_leader_of_china.png"			
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_hong_kong_role"
+	texturefile = "gfx/interface/goals/focus_PRC_hong_kong_role.png"
 	}	
+	SpriteType = {
+	name = "GFX_focus_PRC_end_the_one_child_policy"
+	texturefile = "gfx/interface/goals/focus_PRC_end_the_one_child_policy.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_three_evil_forces"
+	texturefile = "gfx/interface/goals/focus_PRC_three_evil_forces.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_continue_the_twelfth_plan"
+	texturefile = "gfx/interface/goals/focus_PRC_continue_the_twelfth_plan.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_17_1_initiative"
+	texturefile = "gfx/interface/goals/focus_PRC_17_1_initiative.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_jinsha_hydroelectricity"
+	texturefile = "gfx/interface/goals/focus_PRC_jinsha_hydroelectricity.png"
+	}		
 	
 	#### Generic continuous goal icons
 	

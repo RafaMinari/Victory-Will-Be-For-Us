@@ -78,7 +78,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRC_three_evil_forces
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_three_evil_forces
 		x = -1
 		y = 1
 		cost = 10
@@ -294,7 +294,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_end_the_one_child_policy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_end_the_one_child_policy
 		x = 1
 		y = 1
 		cost = 10
@@ -326,7 +326,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRC_continue_the_twelfth_plan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_continue_the_twelfth_plan
 		x = 0
 		y = 1
 		cost = 10
@@ -341,7 +341,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_jinsha_hydroelectricity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_jinsha_hydroelectricity
 		x = -2
 		y = 1
 		cost = 10
@@ -371,7 +371,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_hong_kong_role	
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_hong_kong_role
 		x = 2
 		y = 1
 		cost = 10
@@ -562,7 +562,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_17_1_initiative
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_17_1_initiative
 		x = 0
 		y = 1
 		cost = 10

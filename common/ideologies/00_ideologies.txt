@@ -115,6 +115,9 @@ ideologies = {
 
 		types = {
 
+			social_democracy = {
+			}		
+
 		}
 
 		dynamic_faction_names = {
@@ -284,6 +287,9 @@ ideologies = {
 			
 			radical_conservative = {
 			}
+			
+			liberal_conservative = {
+			}			
 		}
 
 		dynamic_faction_names = {
