@@ -15,11 +15,11 @@ set_popularities = {
 	communism = 2
 	socialism = 6
 	social_democracy = 19
-	liberalism = 16
+	democratic = 16
 	centrism = 10
 	conservatism = 27
 	nationalism = 16
-	authoritarianism = 0
+	neutrality = 0
 	neo_fascism = 4
 }
 
