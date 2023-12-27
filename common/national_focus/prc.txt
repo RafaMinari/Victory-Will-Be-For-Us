@@ -59,7 +59,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRC_strike_hard_campaign
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_strike_hard_campaign
 		x = -4
 		y = 1
 		cost = 10
@@ -94,7 +94,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_secular_forced_labour
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_secular_forced_labour
 		x = 1
 		y = 1
 		cost = 10
@@ -110,7 +110,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_civil_servant_family_pair_up_program
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_civil_servant_family_pair_up_program
 		x = -1
 		y = 1
 		cost = 10
@@ -127,7 +127,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_aim_towards_peaceful_assimilation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_aim_towards_peaceful_assimilation
 		x = -8
 		y = 1
 		cost = 10
@@ -146,7 +146,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRC_xinjiang_convention
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_xinjiang_convention
 		x = -2
 		y = 1
 		cost = 10
@@ -165,7 +165,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_the_tuanjie_motion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_the_tuanjie_motion
 		x = 0
 		y = 1
 		cost = 10
@@ -181,7 +181,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_embrace_ethnic_diversity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_embrace_ethnic_diversity
 		x = 0
 		y = 1
 		cost = 10
@@ -404,7 +404,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_aiib_grand_opening	
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_aiib_grand_opening
 		x = 1
 		y = 1
 		cost = 10
@@ -438,7 +438,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_wolf_warrior_diplomacy	
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_wolf_warrior_diplomacy
 		x = 13
 		y = 1
 		cost = 10
@@ -723,7 +723,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_transform_the_people_liberation_army
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_transform_the_pla
 		x = 28
 		y = 0
 		cost = 10

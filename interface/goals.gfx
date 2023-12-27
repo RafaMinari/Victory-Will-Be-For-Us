@@ -193,7 +193,46 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_focus_PRC_jinsha_hydroelectricity"
 	texturefile = "gfx/interface/goals/focus_PRC_jinsha_hydroelectricity.png"
-	}		
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_aim_towards_peaceful_assimilation"
+	texturefile = "gfx/interface/goals/focus_PRC_aim_towards_peaceful_assimilation.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_civil_servant_family_pair_up_program"
+	texturefile = "gfx/interface/goals/focus_PRC_civil_servant_family_pair_up_program.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_secular_forced_labour"
+	texturefile = "gfx/interface/goals/focus_PRC_secular_forced_labour.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_the_tuanjie_motion"
+	texturefile = "gfx/interface/goals/focus_PRC_the_tuanjie_motion.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_embrace_ethnic_diversity"
+	texturefile = "gfx/interface/goals/focus_PRC_embrace_ethnic_diversity.png"
+	}	SpriteType = {
+	name = "GFX_focus_PRC_xinjiang_convention"
+	texturefile = "gfx/interface/goals/focus_PRC_xinjiang_convention.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_strike_hard_campaign"
+	texturefile = "gfx/interface/goals/focus_PRC_strike_hard_campaign.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_wolf_warrior_diplomacy"
+	texturefile = "gfx/interface/goals/focus_PRC_wolf_warrior_diplomacy.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_transform_the_pla"
+	texturefile = "gfx/interface/goals/focus_PRC_transform_the_pla.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_aiib_grand_opening"
+	texturefile = "gfx/interface/goals/focus_PRC_aiib_grand_opening.png"
+	}	
 	
 	#### Generic continuous goal icons
 	
