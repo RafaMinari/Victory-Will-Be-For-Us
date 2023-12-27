@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+
+		PRC_onechild_policy = {
+			picture = PRC_onechild_policy-1847
+		}
+
+		PRC_belt_and_road_initiative = {
+			picture = PRC_belt_and_road_initiative-1079
+		}
+
+		PRC_one_china_policy = {
+			picture = PRC_one_china_policy-1226
+		}
+
+		PRC_ruralurban_wealth_disparities = {
+			picture = PRC_ruralurban_wealth_disparities-1293
+		}
+
+		PRC_worlds_factory = {
+			picture = PRC_worlds_factory-1081
+		}
+	}
+}

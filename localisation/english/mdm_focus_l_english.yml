@@ -1,4 +1,5 @@
 ﻿l_english:
+
   #Brazil
   BRA_developindustry:0 "Develop our industry"
   BRA_spdevelop:0 "Develop São Paulo"
@@ -15,6 +16,7 @@
   BRA_lulismo:0 "Lulismo"
   BRA_democracy_failed:0 "Democracy has failed..."
   BRA_king_will_not:0 "The Emperor will not."
+  
   #USA
   USA_trump_america_first:0 "America First"
   USA_trump_america_first_desc:0 "When it comes to foreign policy we need to remember what our priorities are: America First, everyone else second."
@@ -72,3 +74,5 @@
   USA_trade_war_desc:0 "We will not continue the policy of enriching our enemies at the expense of our own people. Chinese business can not be allowed to outcompete American business on American soil."
   USA_bigger_and_better:0 "Bigger and Better"
   USA_bigger_and_better_desc:0 "Some people are saying President Trump has built the greatest economy the world has ever seen. Anyone with a brain can see it. The American Dream is alive and well, and President Trump has brought it back!"
+
+  # People's Republic of China

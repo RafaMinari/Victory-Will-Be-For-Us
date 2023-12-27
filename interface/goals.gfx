@@ -2,6 +2,8 @@ spriteTypes = {
 	
 	#### MDM focuses
 	
+	# USA
+	
 	SpriteType = {
 	name = "GFX_focus_BRA_sp_develop"
 	texturefile = "gfx/interface/goals/focus_BRA_develop_sp.dds"			
@@ -161,6 +163,13 @@ spriteTypes = {
 	name = "GFX_focus_USA_stop_the_expansion"
 	texturefile = "gfx/interface/goals/focus_USA_stop_the_expansion.dds"			
 	}
+	
+	# People's Republic of China
+	
+	SpriteType = {
+	name = "GFX_focus_PRC_the_paramount_leader_of_china"
+	texturefile = "gfx/interface/goals/focus_PRC_the_paramount_leader_of_china.png"			
+	}	
 	
 	#### Generic continuous goal icons
 	

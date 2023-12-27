@@ -1,0 +1,1030 @@
+focus_tree = {
+	id = prc
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	
+	focus = {
+		id = PRC_the_paramount_leader_of_china
+		icon = GFX_focus_PRC_the_paramount_leader_of_china
+		x = 17
+		y = 1
+		cost = 10
+		search_filters = {
+		}
+		completion_reward = {
+			add_political_power = 100	
+		}
+	}	
+
+	focus = {
+		id = PRC_undermine_the_tuanpai_faction
+		icon = GFX_goal_unknown
+		x = -8
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_the_paramount_leader_of_china
+		prerequisite = { focus = PRC_the_paramount_leader_of_china }
+		completion_reward = {
+			add_stability = 0.05
+			CCP -XI faction +10% party pop
+			CCP -Jiang faction -10% party pop
+			Reduce frequency of negative opposition events by 33%
+		}
+	}
+
+	focus = {
+		id = PRC_anti_corruption_purge
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_undermine_the_tuanpai_faction
+		prerequisite = { focus = PRC_undermine_the_tuanpai_faction }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRC_strike_hard_campaign
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_anti_corruption_purge
+		prerequisite = { focus = PRC_anti_corruption_purge }
+		mutually_exclusive = {
+			focus = PRC_aim_towards_peaceful_assimilation
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRC_three_evil_forces
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_strike_hard_campaign
+		prerequisite = { focus = PRC_strike_hard_campaign }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRC_secular_forced_labour
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_strike_hard_campaign
+		prerequisite = { focus = PRC_strike_hard_campaign }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRC_civil_servant_family_pair_up_program
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_secular_forced_labour
+		prerequisite = { focus = PRC_secular_forced_labour }
+		prerequisite = { focus = PRC_three_evil_forces }		
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = PRC_aim_towards_peaceful_assimilation
+		icon = GFX_goal_unknown
+		x = -8
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_anti_corruption_purge
+		prerequisite = { focus = PRC_anti_corruption_purge }
+		mutually_exclusive = {
+			focus = PRC_strike_hard_campaign
+		}		
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRC_xinjiang_convention
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_aim_towards_peaceful_assimilation
+		prerequisite = { focus = PRC_aim_towards_peaceful_assimilation }
+		mutually_exclusive = {
+			focus = PRC_strike_hard_campaign
+		}		
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = PRC_the_tuanjie_motion
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_aim_towards_peaceful_assimilation
+		prerequisite = { focus = PRC_aim_towards_peaceful_assimilation }		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRC_embrace_ethnic_diversity
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_the_tuanjie_motion
+		prerequisite = { focus = PRC_the_tuanjie_motion }		
+		completion_reward = {
+
+		}
+	}	
+	
+	focus = {
+		id = PRC_establish_the_cac
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_anti_corruption_purge
+		prerequisite = { focus = PRC_anti_corruption_purge }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRC_xi_cult_of_personality
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_establish_the_cac
+		prerequisite = { focus = PRC_establish_the_cac }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = PRC_weiwen
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_xi_cult_of_personality
+		prerequisite = { focus = PRC_xi_cult_of_personality	}
+		prerequisite = { focus = PRC_end_the_one_child_policy }
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRC_fourth_central_committee_plenum
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_undermine_the_tuanpai_faction
+		prerequisite = { focus = PRC_undermine_the_tuanpai_faction }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRC_four_comprehensives
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_fourth_central_committee_plenum
+		prerequisite = { focus = PRC_fourth_central_committee_plenum }
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = PRC_reinterpret_the_constitution
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_fourth_central_committee_plenum
+		prerequisite = { focus = PRC_fourth_central_committee_plenum }
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = PRC_end_the_one_child_policy
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_reinterpret_the_constitution
+		prerequisite = { focus = PRC_reinterpret_the_constitution }
+		prerequisite = { focus = PRC_four_comprehensives }		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = PRC_economic_prosperity
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_the_paramount_leader_of_china
+		prerequisite = { focus = PRC_the_paramount_leader_of_china }
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = PRC_continue_the_twelfth_plan
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_economic_prosperity
+		prerequisite = { focus = PRC_economic_prosperity }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_jinsha_hydroelectricity
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_continue_the_twelfth_plan
+		prerequisite = { focus = PRC_continue_the_twelfth_plan }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_prioritize_equitable_wealth_distribution
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_continue_the_twelfth_plan
+		prerequisite = { focus = PRC_continue_the_twelfth_plan }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_hong_kong_role	
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_continue_the_twelfth_plan
+		prerequisite = { focus = PRC_continue_the_twelfth_plan }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_made_in_china_2015	
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_jinsha_hydroelectricity
+		prerequisite = { 
+			focus = PRC_jinsha_hydroelectricity 
+			focus = PRC_prioritize_equitable_wealth_distribution
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_aiib_grand_opening	
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_prioritize_equitable_wealth_distribution
+		prerequisite = { 
+			focus = PRC_hong_kong_role 
+			focus = PRC_prioritize_equitable_wealth_distribution
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_kickstart_the_thirteen_five_year_plan	
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_made_in_china_2015
+		prerequisite = { focus = PRC_made_in_china_2015 }
+		prerequisite = { focus = PRC_aiib_grand_opening }		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_wolf_warrior_diplomacy	
+		icon = GFX_goal_unknown
+		x = 13
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_the_paramount_leader_of_china
+		prerequisite = { focus = PRC_the_paramount_leader_of_china }		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_21_century_economic_belt	
+		icon = GFX_goal_unknown
+		x = -7
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_wolf_warrior_diplomacy
+		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
+		prerequisite = { focus = PRC_economic_prosperity }
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = PRC_maratime_silk_road_funding	
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_21_century_economic_belt
+		prerequisite = { focus = PRC_21_century_economic_belt }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_vision_and_actions_joint_building	
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_maratime_silk_road_funding
+		prerequisite = { focus = PRC_maratime_silk_road_funding }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_overland_routes
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_21_century_economic_belt
+		prerequisite = { focus = PRC_21_century_economic_belt }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_the_chinese_marshall_plan
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_overland_routes
+		prerequisite = { focus = PRC_overland_routes }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_the_chinese_century
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_latin_american_cooperation
+		prerequisite = { focus = PRC_the_chinese_marshall_plan }
+		prerequisite = { focus = PRC_vision_and_actions_joint_building }
+		prerequisite = { focus = PRC_latin_american_cooperation }
+		prerequisite = { focus = PRC_g20_hangzhou_summit }	
+		completion_reward = {
+		}
+	}	
+	
+	focus = {
+		id = PRC_us_china_sed
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_wolf_warrior_diplomacy
+		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_17_1_initiative
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_us_china_sed
+		prerequisite = { focus = PRC_us_china_sed }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_latin_american_cooperation
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_17_1_initiative
+		prerequisite = { focus = PRC_17_1_initiative }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_support_russian_interventionism
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_wolf_warrior_diplomacy
+		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
+		mutually_exclusive = { focus = PRC_condemn_the_invasion }		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_condemn_the_invasion
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_wolf_warrior_diplomacy
+		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
+		mutually_exclusive = { focus = PRC_support_russian_interventionism }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_201_cica_conference
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_support_russian_interventionism
+		prerequisite = { 
+			focus = PRC_support_russian_interventionism 
+			focus = PRC_condemn_the_invasion
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_focac_conference
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_condemn_the_invasion
+		prerequisite = { 
+			focus = PRC_support_russian_interventionism 
+			focus = PRC_condemn_the_invasion
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_g20_hangzhou_summit
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_focac_conference
+		prerequisite = { focus = PRC_focac_conference }
+		prerequisite = { focus = PRC_201_cica_conference }		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_reasert_claims_on_the_south_china_sea
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_wolf_warrior_diplomacy
+		prerequisite = { focus = PRC_wolf_warrior_diplomacy }	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_ma_xi_meeting
+		icon = GFX_goal_unknown
+		x = -1
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_reasert_claims_on_the_south_china_sea
+		prerequisite = { focus = PRC_reasert_claims_on_the_south_china_sea }	
+		mutually_exclusive = { focus = PRC_rivals_across_the_sea }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_rivals_across_the_sea
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_reasert_claims_on_the_south_china_sea
+		prerequisite = { focus = PRC_reasert_claims_on_the_south_china_sea }	
+		mutually_exclusive = { focus = PRC_ma_xi_meeting }
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = PRC_transform_the_people_liberation_army
+		icon = GFX_goal_unknown
+		x = 28
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_the_paramount_leader_of_china
+		completion_reward = {
+		}
+	}	
+	
+	focus = {
+		id = PRC_military_civic_fusion
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_transform_the_people_liberation_army
+		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_independent_innovation
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_military_civic_fusion
+		prerequisite = { focus = PRC_military_civic_fusion }	
+		completion_reward = {
+		}
+	}	
+	
+	focus = {
+		id = PRC_establish_the_pla_ground_force
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_transform_the_people_liberation_army
+		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_professional_oritented_forces
+		icon = GFX_goal_unknown
+		x = -2
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_transform_the_people_liberation_army
+		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_clean_up_complacency
+		icon = GFX_goal_unknown
+		x = -6
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_transform_the_people_liberation_army
+		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_announce_the_dndmr
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_establish_the_pla_ground_force
+		prerequisite = { focus = PRC_clean_up_complacency }
+		prerequisite = { focus = PRC_professional_oritented_forces }	
+		prerequisite = { focus = PRC_establish_the_pla_ground_force }			
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_the_second_rma_program
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_transform_the_people_liberation_army
+		prerequisite = { focus = PRC_transform_the_people_liberation_army }
+		mutually_exclusive = { focus = PRC_divert_needed_resources }
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = PRC_quantity_over_quality
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_the_second_rma_program
+		prerequisite = { focus = PRC_the_second_rma_program }
+		mutually_exclusive = { focus = PRC_zhilang_act }
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = PRC_russo_chinese_commute
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_quantity_over_quality
+		prerequisite = { focus = PRC_quantity_over_quality }
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = PRC_zhilang_act
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_the_second_rma_program
+		prerequisite = { focus = PRC_the_second_rma_program }
+		mutually_exclusive = { focus = PRC_quantity_over_quality }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_coordinated_mbt_evolution
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_quantity_over_quality
+		prerequisite = { focus = PRC_zhilang_act }
+		prerequisite = { focus = PRC_quantity_over_quality }		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_introduce_the_new_national_military_strategy
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_coordinated_mbt_evolution
+		prerequisite = { focus = PRC_coordinated_mbt_evolution }		
+		completion_reward = {
+		}
+	}		
+
+	focus = {
+		id = PRC_divert_needed_resources
+		icon = GFX_goal_unknown
+		x = 10
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_transform_the_people_liberation_army
+		prerequisite = { focus = PRC_transform_the_people_liberation_army }
+		mutually_exclusive = { focus = PRC_the_second_rma_program }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_increase_plaaf_exercises
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_divert_needed_resources
+		prerequisite = { focus = PRC_divert_needed_resources }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_power_projection_capabilities
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_increase_plaaf_exercises
+		prerequisite = { focus = PRC_increase_plaaf_exercises }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_fourth_gen_majority
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_divert_needed_resources
+		prerequisite = { focus = PRC_divert_needed_resources }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_bolster_the_plan
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_divert_needed_resources
+		prerequisite = { focus = PRC_divert_needed_resources }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_efficient_ship_construction
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_bolster_the_plan
+		prerequisite = { focus = PRC_bolster_the_plan }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRC_expand_shanghai_naval_base
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		relative_position_id = PRC_bolster_the_plan
+		prerequisite = { focus = PRC_bolster_the_plan }
+		completion_reward = {
+		}
+	}	
+	
+}

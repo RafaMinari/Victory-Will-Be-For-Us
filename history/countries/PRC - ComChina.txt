@@ -24,9 +24,11 @@ set_popularities = {
 }
 
 add_ideas = {
-	closed_economy
-	service_by_requirement
-	partial_economic_mobilisation
+	PRC_onechild_policy
+	PRC_belt_and_road_initiative
+	PRC_one_china_policy
+	PRC_ruralurban_wealth_disparities
+	PRC_worlds_factory
 }
 
 set_technology = {

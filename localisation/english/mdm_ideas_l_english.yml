@@ -1,4 +1,6 @@
 ﻿l_english:
+
+ # USA
  second_ammendment:0 "The Second Amendment"
  second_ammendment_desc:0 "According to The Second Amendment of our Constitution, every citizen has the right to bear guns."
  afghan_occupation:0 "Afghan Occupation"
@@ -38,4 +40,14 @@
  NAFTA_desc:0 "To further increase economic relations with the North America countries, NAFTA was established reducing tarrifs between our countries."
  UMSCA:0 "UMSCA"
  UMSCA_desc:0 "NAFTA was only beneficial to Canada and Mexico. With UMSCA, things are going to change and the US will be benefited from the treaty."
+ 
+ # People's Republic of China
+ PRC_onechild_policy:0 "One-Child Policy"
+ PRC_onechild_policy_desc:0 "Implemented in the 1970s to prevent overpopulation, this limits the number of children our people can have to 1."
+ PRC_belt_and_road_initiative:0 "Belt and Road Initiative"
+ PRC_one_china_policy:0 "One China Policy"
+ PRC_one_china_policy_desc:0 "There is only one sovereign state under the name China, the PRC is the sole legitimate government of China, and Taiwan is an inalienable part of China."
+ PRC_ruralurban_wealth_disparities:0 "Rural-Urban Wealth Disparities"
+ PRC_worlds_factory:0 "World's Factory"
+ PRC_worlds_factory_desc:0 "Over the past few decades, we have become the world's manufacturing center, this comes with many advantages in efficiency, however, it also means a considerable portion of our factories are utilized to manufacture goods for others. "
  

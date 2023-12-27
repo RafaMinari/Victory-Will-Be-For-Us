@@ -76,4 +76,24 @@ spriteTypes = {
 		name = "GFX_idea_USA_mex_tariffs"
 		texturefile = "gfx/interface/ideas/USA_mex_tariffs.dds"
 	}
+	SpriteType = { 
+		name = "GFX_idea_PRC_onechild_policy-1847"
+		texturefile = "gfx/interface/ideas/peoples-republic-of-china-ideas-ideas/PRC_onechild_policy-1847.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_PRC_belt_and_road_initiative-1079"
+		texturefile = "gfx/interface/ideas/peoples-republic-of-china-ideas-ideas/PRC_belt_and_road_initiative-1079.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_PRC_one_china_policy-1226"
+		texturefile = "gfx/interface/ideas/peoples-republic-of-china-ideas-ideas/PRC_one_china_policy-1226.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_PRC_ruralurban_wealth_disparities-1293"
+		texturefile = "gfx/interface/ideas/peoples-republic-of-china-ideas-ideas/PRC_ruralurban_wealth_disparities-1293.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_PRC_worlds_factory-1081"
+		texturefile = "gfx/interface/ideas/peoples-republic-of-china-ideas-ideas/PRC_worlds_factory-1081.dds"
+	}	
 }
