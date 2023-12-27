@@ -1,0 +1,42 @@
+characters={
+	BRA_dilma={
+		name=BRA_dilma
+		portraits={
+			civilian={
+				large=GFX_portrait_brazil_dilma
+			}
+		}
+		country_leader={
+			ideology = social_liberal
+			expire="2099.1.1.1"
+			id=-1
+		}
+	}
+	BRA_lula={
+		name=BRA_lula
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_Lula
+			}
+		}
+		country_leader={
+			ideology= social_liberal
+			expire="2099.1.1.1"
+			id=-1
+		}
+	}
+	BRA_luiz={
+		name=BRA_luiz
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_Luiz_emperor
+			}
+		}
+		country_leader={
+			ideology = monarchism
+			expire="2099.1.1.1"
+			id=-1
+		}
+	}
+	
+}
