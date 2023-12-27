@@ -1,0 +1,27 @@
+defined_text = {
+    name = GetCICAFocusYear
+    text = {
+        trigger = {
+            date < 2015.01.01
+        }
+        localization_key = PRC_cica_2014_loc_key
+    }
+    text = {
+        trigger = {
+            date < 2016.01.01
+        }
+        localization_key = PRC_cica_2015_loc_key
+    }
+    text = {
+        trigger = {
+            date < 2017.01.01
+        }
+        localization_key = PRC_cica_2016_loc_key
+    }
+    text = {
+        trigger = {
+            date < 2018.01.01
+        }
+        localization_key = PRC_cica_2017_loc_key
+    }	
+}
