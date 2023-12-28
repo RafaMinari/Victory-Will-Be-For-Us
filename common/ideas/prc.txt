@@ -2,22 +2,109 @@ ideas = {
 	country = {
 		PRC_one_child_policy = {
 			picture = GFX_idea_unknown
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.3
+				stability_factor = -0.15
+				political_power_gain = -0.1
+			}
 		}
 
 		PRC_belt_and_road_initiative = {
 			picture = GFX_idea_unknown
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+				civilian_factory_use = 5
+				opinion_gain_monthly_factor = 0.05
+			}
 		}
 
 		PRC_one_china_policy = {
 			picture = GFX_idea_unknown
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
 		}
 
 		PRC_rural_urban_wealth_disparities = {
 			picture = GFX_idea_unknown
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				production_speed_buildings_factor = -0.15
+				mobilization_speed = 0.05
+			}
 		}
 
 		PRC_worlds_factory = {
 			picture = GFX_idea_unknown
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.1 
+				research_speed_factor = 0.05
+				local_factories = 0.1
+			}
 		}
 	}
 }

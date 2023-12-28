@@ -16,6 +16,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		completion_reward = {
 			add_political_power = 100	
@@ -30,6 +31,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_the_paramount_leader_of_china
 		prerequisite = { focus = PRC_the_paramount_leader_of_china }
@@ -49,6 +51,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_undermine_the_tuanpai_faction
 		prerequisite = { focus = PRC_undermine_the_tuanpai_faction }
@@ -64,7 +67,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
+			FOCUS_FILTER_HISTORICAL
+				
 		}
 		relative_position_id = PRC_anti_corruption_purge
 		prerequisite = { focus = PRC_anti_corruption_purge }
@@ -83,7 +88,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
 		}
 		relative_position_id = PRC_strike_hard_campaign
 		prerequisite = { focus = PRC_strike_hard_campaign }
@@ -99,7 +105,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
 		}
 		relative_position_id = PRC_strike_hard_campaign
 		prerequisite = { focus = PRC_strike_hard_campaign }
@@ -115,7 +122,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
 		}
 		relative_position_id = PRC_secular_forced_labour
 		prerequisite = { focus = PRC_secular_forced_labour }
@@ -132,7 +140,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
 		}
 		relative_position_id = PRC_anti_corruption_purge
 		prerequisite = { focus = PRC_anti_corruption_purge }
@@ -151,7 +159,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
 		}
 		relative_position_id = PRC_aim_towards_peaceful_assimilation
 		prerequisite = { focus = PRC_aim_towards_peaceful_assimilation }
@@ -170,7 +178,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
 		}
 		relative_position_id = PRC_aim_towards_peaceful_assimilation
 		prerequisite = { focus = PRC_aim_towards_peaceful_assimilation }		
@@ -186,7 +194,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_AUTONOMOUS_MANAGEMENT
 		}
 		relative_position_id = PRC_the_tuanjie_motion
 		prerequisite = { focus = PRC_the_tuanjie_motion }		
@@ -202,6 +210,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 			FOCUS_FILTER_POLITICAL
 		}
 		relative_position_id = PRC_anti_corruption_purge
@@ -219,6 +228,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_establish_the_cac
 		prerequisite = { focus = PRC_establish_the_cac }
@@ -235,6 +245,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_xi_cult_of_personality
 		prerequisite = { focus = PRC_xi_cult_of_personality	}
@@ -252,6 +263,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_undermine_the_tuanpai_faction
 		prerequisite = { focus = PRC_undermine_the_tuanpai_faction }
@@ -268,6 +280,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_fourth_central_committee_plenum
 		prerequisite = { focus = PRC_fourth_central_committee_plenum }
@@ -284,6 +297,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_fourth_central_committee_plenum
 		prerequisite = { focus = PRC_fourth_central_committee_plenum }
@@ -300,6 +314,7 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_reinterpret_the_constitution
 		prerequisite = { focus = PRC_reinterpret_the_constitution }
@@ -316,7 +331,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_the_paramount_leader_of_china
 		prerequisite = { focus = PRC_the_paramount_leader_of_china }
@@ -331,7 +347,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_economic_prosperity
 		prerequisite = { focus = PRC_economic_prosperity }
@@ -346,7 +363,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_continue_the_twelfth_plan
 		prerequisite = { focus = PRC_continue_the_twelfth_plan }
@@ -361,7 +379,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_continue_the_twelfth_plan
 		prerequisite = { focus = PRC_continue_the_twelfth_plan }
@@ -376,7 +395,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_continue_the_twelfth_plan
 		prerequisite = { focus = PRC_continue_the_twelfth_plan }
@@ -391,7 +411,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_jinsha_hydroelectricity
 		prerequisite = { 
@@ -409,7 +430,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_prioritize_equitable_wealth_distribution
 		prerequisite = { 
@@ -427,7 +449,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_made_in_china_2025
 		prerequisite = { focus = PRC_made_in_china_2025 }
@@ -443,7 +466,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_the_paramount_leader_of_china
 		prerequisite = { focus = PRC_the_paramount_leader_of_china }		
@@ -458,7 +482,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_wolf_warrior_diplomacy
 		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
@@ -474,7 +500,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_21_century_economic_belt
 		prerequisite = { focus = PRC_21_century_economic_belt }
@@ -489,7 +517,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_maratime_silk_road_funding
 		prerequisite = { focus = PRC_maratime_silk_road_funding }
@@ -504,7 +534,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_21_century_economic_belt
 		prerequisite = { focus = PRC_21_century_economic_belt }
@@ -519,7 +551,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_ECONOMIC_DEVELOPEMENT
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_overland_routes
 		prerequisite = { focus = PRC_overland_routes }
@@ -534,7 +568,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_latin_american_cooperation
 		prerequisite = { focus = PRC_the_chinese_marshall_plan }
@@ -552,7 +587,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_wolf_warrior_diplomacy
 		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
@@ -567,7 +603,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_us_china_sed
 		prerequisite = { focus = PRC_us_china_sed }
@@ -582,7 +619,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_17_1_initiative
 		prerequisite = { focus = PRC_17_1_initiative }
@@ -597,7 +635,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_wolf_warrior_diplomacy
 		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
@@ -613,7 +652,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
 		}
 		relative_position_id = PRC_wolf_warrior_diplomacy
 		prerequisite = { focus = PRC_wolf_warrior_diplomacy }
@@ -630,7 +669,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_support_russian_interventionism
 		prerequisite = { 
@@ -648,7 +688,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_condemn_the_invasion
 		prerequisite = { 
@@ -666,7 +707,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_focac_conference
 		prerequisite = { focus = PRC_focac_conference }
@@ -682,7 +724,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_wolf_warrior_diplomacy
 		prerequisite = { focus = PRC_wolf_warrior_diplomacy }	
@@ -697,7 +740,8 @@ focus_tree = {
 		y = 2
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_reasert_claims_on_the_south_china_sea
 		prerequisite = { focus = PRC_reasert_claims_on_the_south_china_sea }	
@@ -713,7 +757,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_FOREIGN_POLICY
 		}
 		relative_position_id = PRC_reasert_claims_on_the_south_china_sea
 		prerequisite = { focus = PRC_reasert_claims_on_the_south_china_sea }	
@@ -729,7 +773,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_the_paramount_leader_of_china
 		completion_reward = {
@@ -737,13 +781,13 @@ focus_tree = {
 	}	
 	
 	focus = {
-		id = PRC_military_civic_fusion
+		id = PRC_military_civil_fusion
 		icon = GFX_goal_unknown
 		x = 0
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_transform_the_people_liberation_army
 		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
@@ -758,10 +802,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
-		relative_position_id = PRC_military_civic_fusion
-		prerequisite = { focus = PRC_military_civic_fusion }	
+		relative_position_id = PRC_military_civil_fusion
+		prerequisite = { focus = PRC_military_civil_fusion }	
 		completion_reward = {
 		}
 	}	
@@ -773,7 +817,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_transform_the_people_liberation_army
 		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
@@ -788,7 +832,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_transform_the_people_liberation_army
 		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
@@ -803,7 +847,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_transform_the_people_liberation_army
 		prerequisite = { focus = PRC_transform_the_people_liberation_army }	
@@ -818,7 +862,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_establish_the_pla_ground_force
 		prerequisite = { focus = PRC_clean_up_complacency }
@@ -835,7 +879,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
 		}
 		relative_position_id = PRC_transform_the_people_liberation_army
 		prerequisite = { focus = PRC_transform_the_people_liberation_army }
@@ -851,7 +894,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
 		}
 		relative_position_id = PRC_the_second_rma_program
 		prerequisite = { focus = PRC_the_second_rma_program }
@@ -867,7 +909,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
 		}
 		relative_position_id = PRC_quantity_over_quality
 		prerequisite = { focus = PRC_quantity_over_quality }
@@ -882,7 +923,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
 		}
 		relative_position_id = PRC_the_second_rma_program
 		prerequisite = { focus = PRC_the_second_rma_program }
@@ -898,7 +938,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
 		}
 		relative_position_id = PRC_quantity_over_quality
 		prerequisite = { focus = PRC_zhilang_act }
@@ -914,7 +953,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
 		}
 		relative_position_id = PRC_coordinated_mbt_evolution
 		prerequisite = { focus = PRC_coordinated_mbt_evolution }		
@@ -929,7 +967,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_transform_the_people_liberation_army
 		prerequisite = { focus = PRC_transform_the_people_liberation_army }
@@ -945,7 +983,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_divert_needed_resources
 		prerequisite = { focus = PRC_divert_needed_resources }
@@ -960,7 +998,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_increase_plaaf_exercises
 		prerequisite = { focus = PRC_increase_plaaf_exercises }
@@ -975,7 +1013,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_divert_needed_resources
 		prerequisite = { focus = PRC_divert_needed_resources }
@@ -990,7 +1028,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_divert_needed_resources
 		prerequisite = { focus = PRC_divert_needed_resources }
@@ -1005,7 +1043,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_bolster_the_plan
 		prerequisite = { focus = PRC_bolster_the_plan }
@@ -1020,7 +1058,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_HISTORICAL
 		}
 		relative_position_id = PRC_bolster_the_plan
 		prerequisite = { focus = PRC_bolster_the_plan }
