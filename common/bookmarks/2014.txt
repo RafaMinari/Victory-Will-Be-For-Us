@@ -50,11 +50,11 @@ bookmarks = {
 			}	
 		}
 		"PRC"={
-			history = "PRC_GATHERING_STORM_DESC"
+			history = "PRC_2014_DESC"
 			ideology = communism
 			ideas = {
 				PRC_belt_and_road_initiative
-				PRC_one_china_policy
+				PRC_one_china_principle
 				PRC_worlds_factory
 			}
 			focuses = {

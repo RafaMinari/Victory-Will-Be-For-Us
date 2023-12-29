@@ -26,9 +26,11 @@ set_popularities = {
 add_ideas = {
 	PRC_one_child_policy
 	PRC_belt_and_road_initiative
-	PRC_one_china_policy
+	PRC_one_china_principle
 	PRC_rural_urban_wealth_disparities
 	PRC_worlds_factory
+	free_trade
+	limited_conscription
 }
 
 set_technology = {

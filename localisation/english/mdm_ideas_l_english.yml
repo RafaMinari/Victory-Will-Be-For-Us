@@ -40,3 +40,17 @@
  NAFTA_desc:0 "To further increase economic relations with the North America countries, NAFTA was established reducing tarrifs between our countries."
  UMSCA:0 "UMSCA"
  UMSCA_desc:0 "NAFTA was only beneficial to Canada and Mexico. With UMSCA, things are going to change and the US will be benefited from the treaty."
+ 
+ # People's Republic of China
+ PRC_one_child_policy:0 "One-Child Policy"
+ PRC_one_child_policy_desc:0 "WIP"
+ PRC_two_child_policy:0 "Two-Child Policy"
+ PRC_two_child_policy_desc:0 "WIP"
+ PRC_belt_and_road_initiative:0 "Belt and Road Initiative"
+ PRC_belt_and_road_initiative_desc:0 "WIP"
+ PRC_one_china_principle:0 "One China Principle"
+ PRC_one_china_principle_desc:0 "WIP"
+ PRC_rural_urban_wealth_disparities:0 "Rural-Urban Wealth Disparities"
+ PRC_rural_urban_wealth_disparities_desc:0 "WIP"
+ PRC_worlds_factory:0 "World's Factory"
+ PRC_worlds_factory_desc:0 "WIP"

@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		PRC_one_child_policy = {
-			picture = GFX_idea_unknown
+			picture = GFX_idea_PRC_one_child_policy
 			
 			allowed = {
 				always = no
@@ -16,12 +16,12 @@ ideas = {
 			modifier = {
 				monthly_population = -0.3
 				stability_factor = -0.15
-				political_power_gain = -0.1
+				political_power_gain = -0.15
 			}
 		}
 
 		PRC_belt_and_road_initiative = {
-			picture = GFX_idea_unknown
+			picture = GFX_idea_PRC_belt_and_road_initiative
 			
 			allowed = {
 				always = no
@@ -41,8 +41,8 @@ ideas = {
 			}
 		}
 
-		PRC_one_china_policy = {
-			picture = GFX_idea_unknown
+		PRC_one_china_principle  = {
+			picture = GFX_idea_PRC_one_china_principle
 			
 			allowed = {
 				always = no
@@ -65,7 +65,7 @@ ideas = {
 		}
 
 		PRC_rural_urban_wealth_disparities = {
-			picture = GFX_idea_unknown
+			picture = GFX_idea_PRC_rural_urban_wealth_disparities
 			
 			allowed = {
 				always = no
@@ -85,7 +85,7 @@ ideas = {
 		}
 
 		PRC_worlds_factory = {
-			picture = GFX_idea_unknown
+			picture = GFX_idea_PRC_worlds_factory
 			
 			allowed = {
 				always = no

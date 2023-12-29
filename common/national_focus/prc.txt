@@ -45,7 +45,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_anti_corruption_purge
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_anti_corruption_purge
 		x = -2
 		y = 1
 		cost = 10
@@ -222,7 +222,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_xi_cult_of_personality
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_xi_cult_of_personality
 		x = 0
 		y = 1
 		cost = 10
@@ -239,7 +239,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_weiwen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_weiwen
 		x = 2
 		y = 1
 		cost = 10
@@ -257,7 +257,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRC_fourth_central_committee_plenum
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_fourth_central_committee_plenum
 		x = 2
 		y = 1
 		cost = 10
@@ -274,7 +274,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_four_comprehensives
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_four_comprehensives
 		x = 1
 		y = 1
 		cost = 10
@@ -291,7 +291,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_reinterpret_the_constitution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_reinterpret_the_constitution
 		x = -1
 		y = 1
 		cost = 10
@@ -326,7 +326,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_economic_prosperity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_economic_prosperity
 		x = 0
 		y = 1
 		cost = 10

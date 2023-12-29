@@ -232,7 +232,35 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_focus_PRC_aiib_grand_opening"
 	texturefile = "gfx/interface/goals/focus_PRC_aiib_grand_opening.png"
+	}
+	SpriteType = {
+	name = "GFX_focus_PRC_economic_prosperity"
+	texturefile = "gfx/interface/goals/focus_PRC_economic_prosperity.png"
 	}	
+	SpriteType = {
+	name = "GFX_focus_PRC_fourth_central_committee_plenum"
+	texturefile = "gfx/interface/goals/focus_PRC_fourth_central_committee_plenum.png"
+	}	
+	SpriteType = {
+	name = "GFX_focus_PRC_anti_corruption_purge"
+	texturefile = "gfx/interface/goals/focus_PRC_anti_corruption_purge.png"
+	}	
+	SpriteType = {
+	name = "GFX_focus_PRC_reinterpret_the_constitution"
+	texturefile = "gfx/interface/goals/focus_PRC_reinterpret_the_constitution.png"
+	}	
+	SpriteType = {
+	name = "GFX_focus_PRC_xi_cult_of_personality"
+	texturefile = "gfx/interface/goals/focus_PRC_xi_cult_of_personality.png"
+	}	
+	SpriteType = {
+	name = "GFX_focus_PRC_weiwen"
+	texturefile = "gfx/interface/goals/focus_PRC_weiwen.png"
+	}	
+	SpriteType = {
+	name = "GFX_focus_PRC_four_comprehensives"
+	texturefile = "gfx/interface/goals/focus_PRC_four_comprehensives.png"
+	}		
 	
 	#### Generic continuous goal icons
 	
