@@ -21,10 +21,349 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1500 }
+	focus = {
+		id = USA_audacity_of_hope
+		x = 6
+		y = 1
+		icon = GFX_focus_USA_audacity_of_hope
+		cost = 10
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_state_of_the_union
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_state_of_the_union
+		cost = 5
+		relative_position_id = USA_audacity_of_hope
+		prerequisite = {focus = USA_audacity_of_hope}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.02
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_not_our_problem
+		x = -4
+		y = 1
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = USA_state_of_the_union
+		prerequisite = {focus = USA_state_of_the_union}
+		mutually_exclusive = { focus = USA_freeze_russian_assets}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = SOV
+				modifier = USA_did_not_interfere
+			}
+			reverse_add_opinion_modifier = {
+				target = UKR
+				modifier = USA_ignored_us
+			}
+		}
+	}
+	focus = {
+		id = USA_freeze_russian_assets
+		x = -6
+		y = 1
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = USA_state_of_the_union
+		prerequisite = {focus = USA_state_of_the_union}
+		mutually_exclusive = { focus = USA_not_our_problem}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = SOV
+				modifier = USA_froze_our_assets
+			}
+			reverse_add_opinion_modifier = {
+				target = UKR
+				modifier = USA_showed_support
+			}
+			add_political_power = -75
+		}
+	}
+	focus = {
+		id = USA_the_cuban_thaw
+		x = -1
+		y = 1
+		icon = GFX_focus_USA_cuban_thaw
+		cost = 10
+		relative_position_id = USA_not_our_problem
+		prerequisite = {focus = USA_not_our_problem focus = USA_freeze_russian_assets}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			break_embargo = CUB
+			reverse_add_opinion_modifier = {
+				target = CUB
+				modifier = USA_reestablished_relations
+			}
+			add_opinion_modifier = {
+				target = CUB
+				modifier = USA_reestablished_relations
+			}
+		}
+	}
+	focus = {
+		id = USA_time_for_midterms
+		x = 0
+		y = 1
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = USA_state_of_the_union
+		prerequisite = {focus = USA_state_of_the_union}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+			has_country_flag = 2014_midterms
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_blue_landslide
+		x = 2
+		y = 1
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = USA_time_for_midterms
+		prerequisite = {focus = USA_time_for_midterms}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+				
+			}
+			has_country_flag = 2014_midterms
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_republicans_retake_control
+		x = -2
+		y = 1
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = USA_time_for_midterms
+		prerequisite = {focus = USA_time_for_midterms}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+				
+			}
+			has_country_flag = 2014_midterms
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_FPSW
+		x = 4
+		y = 1
+		icon = GFX_focus_USA_fpsw
+		cost = 10
+		relative_position_id = USA_state_of_the_union
+		prerequisite = {focus = USA_state_of_the_union}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_america_college_promise
+		x = 0
+		y = 1
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = USA_FPSW
+		prerequisite = {focus = USA_FPSW}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
 
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_executive_action_immigration
+		x = 2
+		y = 1
+		icon = GFX_goal_unknown
+		cost = 10
+		relative_position_id = USA_FPSW
+		prerequisite = {focus = USA_FPSW}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_TPP_focus
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_trans_pacific_partnership
+		cost = 10
+		relative_position_id = USA_blue_landslide
+		prerequisite = {focus = USA_blue_landslide focus = USA_republicans_retake_control}
+		
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = {USA_TPP}
+		}
+	}
+	focus = {
+		id = USA_embattled_nomination
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_an_embattled_nomination
+		cost = 10
+		relative_position_id = USA_america_college_promise
+		prerequisite = {focus = USA_america_college_promise}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+			date > 2016.02.3
+		}
+		completion_reward = {
+			add_stability = -0.05
+			#Event goes here
+		}
+	}
+	focus = {
+		id = USA_welcoming_his_holiness
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_welcoming_his_holiness
+		cost = 5
+		relative_position_id = USA_the_cuban_thaw
+		prerequisite = {focus = USA_the_cuban_thaw}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.02
+			}
+			#Event goes here
+		}
+	}
+	focus = {
+		id = USA_a_graceful_exit
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_graceful_exit
+		cost = 10
+		relative_position_id = USA_welcoming_his_holiness
+		prerequisite = {focus = USA_welcoming_his_holiness}
+		prerequisite = {focus = USA_TPP_focus}
+		mutually_exclusive = { focus = USA_bold_stand}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			#Placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_bold_stand
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_bold_stand
+		cost = 10
+		relative_position_id = USA_TPP_focus
+		prerequisite = {focus = USA_TPP_focus}
+		prerequisite = {focus = USA_embattled_nomination}
+		mutually_exclusive = { focus = USA_a_graceful_exit}
+		available = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+			date > 2016.06.1
+		}
+		completion_reward = {
+			add_stability = -0.05
+			#Event goes here
+			custom_effect_tooltip = usa_bold_stand_tt
+		}
+		
+	}
 	focus = {
 		id = USA_trump_2016
-		x = 20
+		x = 26
 		y = 1
 		icon = GFX_focus_USA_trump_2016
 		cost = 1
@@ -83,7 +422,7 @@ focus_tree = {
 				popularity = -0.02
 			}
 			add_popularity = {
-				ideology = liberal
+				ideology = liberalism
 				popularity = 0.01
 			}
 			add_popularity = {
@@ -358,7 +697,7 @@ focus_tree = {
 				popularity = 0.02
 			}
 			add_popularity = {
-				ideology = liberal
+				ideology = liberalism
 				popularity = 0.02
 			}
 			country_event = usa_trump_2016.5
@@ -663,6 +1002,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = usa_trump_2016.2
+			add_dynamic_modifier = { modifier = all_american_economy }
 		}
 	}
 	focus = {
@@ -677,7 +1017,14 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_ideas = USA_all_american_economy
+			set_variable = {
+				var = USA_AAE_stab
+				value = -0.2
+			}
+			set_variable = {
+				var = USA_AAE_cg
+				value = -0.2
+			}
 		}
 	}
 	focus = {
@@ -692,11 +1039,14 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_all_american_economy
-				add_idea = USA_all_american_economy_2
+			set_variable = {
+				var = USA_AAE_lrf
+				value = 0.05
 			}
-			
+			subtract_from_variable = {
+				var = USA_AAE_stab
+				value = 0.03
+			}
 		}
 	}
 	focus = {
@@ -711,7 +1061,10 @@ focus_tree = {
 			has_completed_focus = USA_encourage_business_interests
 		}
 		completion_reward = {
-			add_ideas = USA_all_american_economy_3
+			set_variable = {
+				var = USA_AAE_psi
+				value = 0.05
+			}
 		}
 	}
 	focus = {
@@ -727,9 +1080,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = USA_tarifs_china
-			swap_ideas = {
-				remove_idea = USA_all_american_economy_3
-				add_idea = USA_all_american_economy_4
+			set_variable = {
+				var = USA_AAE_psf
+				value = 0.05
 			}
 		}
 	}
@@ -746,11 +1099,208 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_all_american_economy_4
-				add_idea = USA_all_american_economy_5
+			set_variable = {
+				var = USA_AAE_min_exp
+				value = 0.10
+			}
+			set_variable = {
+				var = USA_AAE_stab
+				value = -0.10
+			}
+		}
+	}
+	focus = {
+		id = USA_bernie_2016
+		x = 44
+		y = 1
+		icon = GFX_focus_USA_bernie_2016
+		cost = 1
+		available = {
+			has_country_leader = {
+				character = USA_bernie_sanders
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_people_centered_policy
+		x = -6
+		y = 1
+		icon = GFX_focus_USA_people_centered_policy
+		cost = 1
+		relative_position_id = USA_bernie_2016
+		prerequisite = {focus = USA_bernie_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_protect_american_labor
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_protect_american_labor
+		cost = 5
+		relative_position_id = USA_people_centered_policy
+		prerequisite = {focus = USA_people_centered_policy}
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {has_idea = export_focus}
+				}
+				add_ideas = export_focus 
+			}
+		}
+	}
+
+	focus = {
+		id = USA_equalize_burden
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_equalize_the_burden
+		cost = 5
+		relative_position_id = USA_protect_american_labor
+		prerequisite = {focus = USA_protect_american_labor}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_stop_expansion
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_stop_the_expansion
+		cost = 5
+		relative_position_id = USA_equalize_burden
+		prerequisite = {focus = USA_equalize_burden}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = { 
+				every_country = {
+					limit = {
+						is_in_faction_with = USA
+					}
+					
+				}
+			}
+			custom_effect_tooltip = USA_stop_expansion_tt
+		}
+	}
+	focus = {
+		id = USA_bring_them_home
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_bring_them_home
+		cost = 5
+		relative_position_id = USA_protect_american_labor
+		prerequisite = {focus = USA_protect_american_labor}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_an_end_to_war
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_an_end_to_war
+		cost = 5
+		relative_position_id = USA_bring_them_home
+		prerequisite = {focus = USA_bring_them_home}
+		available = {
+			
+		}
+		completion_reward = {
+			every_country = {
+				limit = {NOT = {is_in_faction_with = USA}}
+				diplomatic_relation = {
+					country = ROOT
+					relation = military_access
+					active = no
+					
+				}
 			}
 			
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_our_main_rival
+		x = 2 
+		y = 1
+		icon = GFX_focus_USA_our_main_rival
+		cost = 5
+		relative_position_id = USA_protect_american_labor
+		prerequisite = {focus = USA_protect_american_labor}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = USA_tarifs_china
+		}
+	}
+	focus = {
+		id = USA_chain_the_bear
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_chain_the_bear
+		cost = 5
+		relative_position_id = USA_our_main_rival
+		prerequisite = {focus = USA_our_main_rival}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+
+			send_embargo = SOV
+		}
+	}
+	focus = {
+		id = USA_champions_of_peace
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_champions_of_peace
+		cost = 10
+		relative_position_id = USA_chain_the_bear
+		prerequisite = {focus = USA_chain_the_bear}
+		prerequisite = {focus = USA_stop_expansion}
+		prerequisite = {focus = USA_an_end_to_war}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
+		}
+	}
+	focus = {
+		id = USA_happy_days_are_here_again
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_happy_days
+		cost = 1
+		relative_position_id = USA_bernie_2016
+		prerequisite = {focus = USA_bernie_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			#placeholder need idea
 		}
 	}
 }
