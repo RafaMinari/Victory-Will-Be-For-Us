@@ -375,7 +375,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {	
-					stability_factor = 0.05
+					stability_factor = -0.05
 					consumer_goods_factor = -0.2
 					local_resources_factor = 0.3
 					min_export = 0.25
@@ -383,7 +383,7 @@ ideas = {
 					production_speed_industrial_complex_factor = 0.5
 				}
 			}
-		
+	
 		USA_mexico_pay = {
 			picture = USA_mexico_pay
 			
@@ -490,5 +490,59 @@ ideas = {
 			}	
 			}
 		
+		USA_obama_hope_1 = {
+			picture = USA_obama_hope
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				stability_factor = 0.10
+			}
 		}
+		USA_obama_hope_2 = {
+			picture = USA_obama_hope
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				stability_factor = 0.10
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		USA_no_nato_expansion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				
+			}
+	
+		}
+	}
 }
