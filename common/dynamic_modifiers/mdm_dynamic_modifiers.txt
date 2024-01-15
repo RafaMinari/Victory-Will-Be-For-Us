@@ -1,0 +1,44 @@
+all_american_economy = {
+	remove_trigger = { 
+		any_character = {
+			limit = {is_country_leader}
+			NOT = {
+				has_ideology_group = conservative
+				has_ideology_group = nationalist
+			}
+		}
+	}
+
+	icon = GFX_ideas_USA_all_american_economy
+	set_variable = {
+		var = USA_AAE_stab
+		value = 0
+	}
+	set_variable = {
+		var = USA_AAE_cg
+		value = 0
+	}
+	set_variable = {
+		var = USA_AAE_lrf
+		value = 0
+	}
+	set_variable = {
+		var = USA_AAE_min_exp
+		value = 0
+	}
+	set_variable = {
+		var = USA_AAE_psi
+		value = 0
+	}
+	set_variable = {
+		var = USA_AAE_psf
+		value = 0
+	}
+	
+	stability_factor = USA_AAE_stab
+	consumer_goods_factor = USA_AAE_cg
+	local_resources_factor = USA_AAE_lrf
+   	min_export = USA_AAE_min_exp
+	production_speed_infrastructure_factor = USA_AAE_psi
+	production_speed_industrial_complex_factor = USA_AAE_psf
+}
