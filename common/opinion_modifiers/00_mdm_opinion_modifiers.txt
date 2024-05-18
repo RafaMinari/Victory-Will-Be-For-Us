@@ -49,4 +49,24 @@ opinion_modifiers = {
 	USA_built_wall = {
 		value = -100
 	}
+
+	USA_did_not_interfere = {
+		value = 25
+	}
+
+	USA_ignored_us = {
+		value = -50
+	}
+
+	USA_froze_our_assets = {
+		value = -25
+	}
+
+	USA_showed_support = {
+		value = 25
+	}
+
+	USA_reestablished_relations = {
+		value = 25
+	}
 }
