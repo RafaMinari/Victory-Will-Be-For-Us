@@ -16,7 +16,7 @@ spriteTypes = {
 	
 	SpriteType = {
 	name = "GFX_focus_USA_trump_2016"
-	texturefile = "gfx/interface/goals/focus_trump_2016.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_trump_2016.png"			
 	}
 	
 	SpriteType = {
@@ -137,12 +137,72 @@ spriteTypes = {
 	}
 	SpriteType = {
 	name = "GFX_focus_USA_audacity_of_hope"
-	texturefile = "gfx/interface/goals/focus_USA_audacity_of_hope.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_audacity_of_hope.png"			
 	}
 	SpriteType = {
 	name = "GFX_focus_USA_state_of_the_union"
-	texturefile = "gfx/interface/goals/focus_USA_state_of_the_union.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_state_of_the_union.png"			
 	}
+	SpriteType = {
+	name = "GFX_focus_USA_midterms_2014"
+	texturefile = "gfx/interface/goals/focus_USA_midterms_2014.png"			
+	}
+	SpriteType = {
+	name = "GFX_focus_USA_not_our_problem"
+	texturefile = "gfx/interface/goals/focus_USA_not_our_problem.png"			
+	}
+	##
+	SpriteType = {
+		name = "GFX_focus_USA_an_embattled_nomination"
+		texturefile = "gfx/interface/goals/focus_USA_an_embattled_nomination.png"			
+		}
+		SpriteType = {
+		name = "GFX_focus_USA_cuban_thaw"
+		texturefile = "gfx/interface/goals/focus_USA_cuban_thaw.png"			
+		}
+		SpriteType = {
+		name = "GFX_focus_USA_democrat_landslide"
+		texturefile = "gfx/interface/goals/focus_USA_democrat_landslide.png"			
+		}
+		SpriteType = {
+		name = "GFX_focus_USA_exec_actions_on_immigration"
+		texturefile = "gfx/interface/goals/focus_USA_exec_actions_on_immigration.png"			
+		}
+	###
+	SpriteType = {
+		name = "GFX_focus_USA_fair_pay_work"
+		texturefile = "gfx/interface/goals/focus_USA_fair_pay_work.png"			
+		}
+	SpriteType = {
+		name = "GFX_focus_USA_free_college"
+		texturefile = "gfx/interface/goals/focus_USA_free_college.png"			
+		}
+	SpriteType = {
+		name = "GFX_focus_USA_freeze_russian_assets"
+		texturefile = "gfx/interface/goals/focus_USA_freeze_russian_assets.png"			
+		}
+	SpriteType = {
+		name = "GFX_focus_USA_graceful_exit"
+		texturefile = "gfx/interface/goals/focus_USA_graceful_exit.png"			
+		}	
+	####
+	SpriteType = {
+		name = "GFX_focus_USA_republicans_retake_control"
+		texturefile = "gfx/interface/goals/focus_USA_republicans_retake_control.png"			
+		}
+	SpriteType = {
+		name = "GFX_focus_USA_trans_pacific_partnership"
+		texturefile = "gfx/interface/goals/focus_USA_trans_pacific_partnership.png"			
+		}
+	SpriteType = {
+		name = "GFX_focus_USA_welcoming_his_holiness"
+		texturefile = "gfx/interface/goals/focus_USA_welcoming_his_holines_2.png"			
+		}
+	SpriteType = {
+		name = "GFX_focus_USA_A_Bold_Stand"
+		texturefile = "gfx/interface/goals/focus_USA_A_Bold_Stand.png"			
+		}
+
 	SpriteType = {
 	name = "GFX_focus_USA_bernie_2016"
 	texturefile = "gfx/interface/goals/focus_USA_bernie_2016.dds"			
