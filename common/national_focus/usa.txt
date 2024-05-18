@@ -34,7 +34,30 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			set_variable = {
+				var = USA_AH_stab
+				value = 0
+			}
+			set_variable = {
+				var = USA_AH_cg
+				value = 0
+			}
+			set_variable = {
+				var = USA_AH_cs
+				value = 0
+			}
+			set_variable = {
+				var = USA_AH_wStab
+				value = 0
+			}
+			set_variable = {
+				var = USA_AH_wLib
+				value = 0
+			}
+
+			add_dynamic_modifier = {
+				modifier = audacity_hope
+			}
 		}
 	}
 	focus = {
@@ -63,7 +86,7 @@ focus_tree = {
 		id = USA_not_our_problem
 		x = -4
 		y = 1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_USA_not_our_problem
 		cost = 5
 		relative_position_id = USA_state_of_the_union
 		prerequisite = {focus = USA_state_of_the_union}
@@ -89,7 +112,7 @@ focus_tree = {
 		id = USA_freeze_russian_assets
 		x = -6
 		y = 1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_USA_freeze_russian_assets
 		cost = 5
 		relative_position_id = USA_state_of_the_union
 		prerequisite = {focus = USA_state_of_the_union}
@@ -142,7 +165,7 @@ focus_tree = {
 		id = USA_time_for_midterms
 		x = 0
 		y = 1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_USA_midterms_2014
 		cost = 5
 		relative_position_id = USA_state_of_the_union
 		prerequisite = {focus = USA_state_of_the_union}
@@ -161,7 +184,7 @@ focus_tree = {
 		id = USA_blue_landslide
 		x = 2
 		y = 1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_USA_democrat_landslide
 		cost = 5
 		relative_position_id = USA_time_for_midterms
 		prerequisite = {focus = USA_time_for_midterms}
@@ -181,7 +204,7 @@ focus_tree = {
 		id = USA_republicans_retake_control
 		x = -2
 		y = 1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_USA_republicans_retake_control
 		cost = 5
 		relative_position_id = USA_time_for_midterms
 		prerequisite = {focus = USA_time_for_midterms}
@@ -201,7 +224,7 @@ focus_tree = {
 		id = USA_FPSW
 		x = 4
 		y = 1
-		icon = GFX_focus_USA_fpsw
+		icon = GFX_focus_USA_fair_pay_work
 		cost = 10
 		relative_position_id = USA_state_of_the_union
 		prerequisite = {focus = USA_state_of_the_union}
@@ -219,7 +242,7 @@ focus_tree = {
 		id = USA_america_college_promise
 		x = 0
 		y = 1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_USA_free_college
 		cost = 5
 		relative_position_id = USA_FPSW
 		prerequisite = {focus = USA_FPSW}
@@ -238,7 +261,7 @@ focus_tree = {
 		id = USA_executive_action_immigration
 		x = 2
 		y = 1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_USA_exec_actions_on_immigration
 		cost = 10
 		relative_position_id = USA_FPSW
 		prerequisite = {focus = USA_FPSW}
@@ -334,14 +357,21 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			#Placeholder need idea
+			add_to_variable = {
+				var = USA_AH_wStab
+				value = 0.1
+			}
+			add_to_variable = {
+				var = USA_AH_wLib
+				value = 0.05
+			}
 		}
 	}
 	focus = {
 		id = USA_bold_stand
 		x = 2
 		y = 1
-		icon = GFX_focus_USA_bold_stand
+		icon = GFX_focus_USA_A_Bold_Stand
 		cost = 10
 		relative_position_id = USA_TPP_focus
 		prerequisite = {focus = USA_TPP_focus}
@@ -1003,6 +1033,30 @@ focus_tree = {
 		completion_reward = {
 			country_event = usa_trump_2016.2
 			add_dynamic_modifier = { modifier = all_american_economy }
+			set_variable = {
+				var = USA_AAE_stab
+				value = 0
+			}
+			set_variable = {
+				var = USA_AAE_cg
+				value = 0
+			}
+			set_variable = {
+				var = USA_AAE_lrf
+				value = 0
+			}
+			set_variable = {
+				var = USA_AAE_min_exp
+				value = 0
+			}
+			set_variable = {
+				var = USA_AAE_psi
+				value = 0
+			}
+			set_variable = {
+				var = USA_AAE_psf
+				value = 0
+			}
 		}
 	}
 	focus = {
