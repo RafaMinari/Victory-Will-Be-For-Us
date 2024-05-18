@@ -205,25 +205,49 @@ spriteTypes = {
 
 	SpriteType = {
 	name = "GFX_focus_USA_bernie_2016"
-	texturefile = "gfx/interface/goals/focus_USA_bernie_2016.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_bernie_2016.png"			
 	}
 	SpriteType = {
 	name = "GFX_focus_USA_people_centered_policy"
-	texturefile = "gfx/interface/goals/focus_USA_people_centered_policy.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_people_centered_policy.png"			
 	}
 	SpriteType = {
 	name = "GFX_focus_USA_protect_american_labor"
-	texturefile = "gfx/interface/goals/focus_USA_protect_american_labor.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_protect_american_labor.png"			
 	}
 	SpriteType = {
 	name = "GFX_focus_USA_equalize_the_burden"
-	texturefile = "gfx/interface/goals/focus_USA_equalize_the_burden.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_equalize_the_burden.png"			
 	}
 	SpriteType = {
 	name = "GFX_focus_USA_stop_the_expansion"
-	texturefile = "gfx/interface/goals/focus_USA_stop_the_expansion.dds"			
+	texturefile = "gfx/interface/goals/focus_USA_stop_the_expansion.png"			
 	}
-	
+	SpriteType = {
+		name = "GFX_focus_USA_our_main_rival"
+		texturefile = "gfx/interface/goals/focus_USA_our_main_rival.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_chain_the_bear"
+		texturefile = "gfx/interface/goals/focus_USA_chain_the_bear.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_bring_them_home"
+		texturefile = "gfx/interface/goals/focus_USA_bring_them_home.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_an_end_to_war"
+		texturefile = "gfx/interface/goals/focus_USA_an_end_to_war.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_champions_of_peace"
+		texturefile = "gfx/interface/goals/focus_USA_champions_of_peace.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_happy_days"
+		texturefile = "gfx/interface/goals/focus_USA_happy_days.png"			
+	}
+
 	# People's Republic of China
 	
 	SpriteType = {
