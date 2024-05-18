@@ -3,37 +3,14 @@ all_american_economy = {
 		any_character = {
 			limit = {is_country_leader}
 			NOT = {
-				has_ideology_group = conservative
-				has_ideology_group = nationalist
+				has_ideology_group = conservatism
+				has_ideology_group = nationalism
 			}
 		}
 	}
 
 	icon = GFX_ideas_USA_all_american_economy
-	set_variable = {
-		var = USA_AAE_stab
-		value = 0
-	}
-	set_variable = {
-		var = USA_AAE_cg
-		value = 0
-	}
-	set_variable = {
-		var = USA_AAE_lrf
-		value = 0
-	}
-	set_variable = {
-		var = USA_AAE_min_exp
-		value = 0
-	}
-	set_variable = {
-		var = USA_AAE_psi
-		value = 0
-	}
-	set_variable = {
-		var = USA_AAE_psf
-		value = 0
-	}
+	
 	
 	stability_factor = USA_AAE_stab
 	consumer_goods_factor = USA_AAE_cg
@@ -41,4 +18,21 @@ all_american_economy = {
    	min_export = USA_AAE_min_exp
 	production_speed_infrastructure_factor = USA_AAE_psi
 	production_speed_industrial_complex_factor = USA_AAE_psf
+}
+
+audacity_hope = {
+	remove_trigger = {
+		NOT = {
+			has_country_leader = {
+				character = USA_obama
+				ruling_only = yes
+			}
+		}
+	}
+
+	stability_factor = USA_AH_stab
+	consumer_goods_factor = USA_AH_cg
+	production_speed_buildings_factor = USA_AH_cs
+	stability_weekly_factor = USA_AH_wStab
+	liberalism_drift = USA_AH_wLib
 }
