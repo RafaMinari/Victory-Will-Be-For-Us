@@ -247,6 +247,34 @@ spriteTypes = {
 		name = "GFX_focus_USA_happy_days"
 		texturefile = "gfx/interface/goals/focus_USA_happy_days.png"			
 	}
+	SpriteType = {
+		name = "GFX_focus_USA_reign_in_surveillance"
+		texturefile = "gfx/interface/goals/focus_USA_reign_in_surveillance.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_end_corporate_bribery"
+		texturefile = "gfx/interface/goals/focus_USA_end_corporate_bribery.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_fill_the_seat_bernie"
+		texturefile = "gfx/interface/goals/focus_USA_fill_the_seat_bernie.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_we_are_the_99"
+		texturefile = "gfx/interface/goals/focus_USA_we_are_the_99.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_close_loopholes"
+		texturefile = "gfx/interface/goals/focus_USA_close_loopholes.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_wrangle_wallstreet"
+		texturefile = "gfx/interface/goals/focus_USA_wrangle_wallstreet.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_USA_rebuild_america_act"
+		texturefile = "gfx/interface/goals/focus_USA_rebuild_america_act.png"			
+	}
 
 	# People's Republic of China
 	
