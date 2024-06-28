@@ -96,6 +96,7 @@ focus_tree = {
 				character = USA_obama
 				ruling_only = yes
 			}
+			SOV = {has_offensive_war_with = UKR}
 		}
 		completion_reward = {
 			reverse_add_opinion_modifier = {
@@ -122,6 +123,7 @@ focus_tree = {
 				character = USA_obama
 				ruling_only = yes
 			}
+			SOV = {has_offensive_war_with = UKR}
 		}
 		completion_reward = {
 			reverse_add_opinion_modifier = {
@@ -637,6 +639,9 @@ focus_tree = {
 		prerequisite = {focus = USA_trump_2016}
 		available = {
 			
+		}
+		bypass = { 
+			has_country_flag = usa_supreme_court_appointed 
 		}
 		completion_reward = {
 			add_popularity = {
@@ -1191,7 +1196,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			#placeholder need idea
+			add_ideas = {USA_peacemaking}
 		}
 	}
 	focus = {
@@ -1208,10 +1213,15 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = {has_idea = export_focus}
+					NOT = {has_idea = {export_focus}}
 				}
-				add_ideas = export_focus 
+				add_ideas = {export_focus} 
 			}
+			swap_ideas = {
+				remove_idea = USA_peacemaking
+				add_idea = USA_peacemaking_protect
+			}
+			
 		}
 	}
 
@@ -1290,7 +1300,10 @@ focus_tree = {
 				}
 			}
 			
-			#placeholder need idea
+			swap_ideas = {
+				remove_idea = USA_peacemaking_protect
+				add_idea = USA_peacemaking_end_war
+			}
 		}
 	}
 	focus = {
@@ -1339,7 +1352,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			#placeholder need idea
+			swap_ideas = {
+				remove_idea = USA_peacemaking_end_war
+				add_idea = USA_champions_peace
+			}
 		}
 	}
 	focus = {
@@ -1354,7 +1370,170 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			#placeholder need idea
+			add_ideas = {USA_happy_days}
+		}
+	}
+	focus = {
+		id = USA_reign_surveillance
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_reign_in_surveillance
+		cost = 1
+		relative_position_id = USA_happy_days_are_here_again
+		prerequisite = {focus = USA_happy_days_are_here_again}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = {USA_happy_days}
+		}
+	}
+	focus = {
+		id = USA_reign_surveillance
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_reign_in_surveillance
+		cost = 5
+		relative_position_id = USA_happy_days_are_here_again
+		prerequisite = {focus = USA_happy_days_are_here_again}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_happy_days
+				add_idea = USA_happy_days_2
+			}
+		}
+	}
+	focus = {
+		id = USA_end_corporate_bribery
+		x = -2
+		y = 1
+		icon = GFX_focus_USA_end_corporate_bribery
+		cost = 5
+		relative_position_id = USA_reign_surveillance
+		prerequisite = {focus = USA_reign_surveillance}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_happy_days_2
+				add_idea = USA_happy_days_3
+			}
+		}
+	}
+	focus = {
+		id = USA_fill_seat_bernie
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_fill_the_seat_bernie
+		cost = 5
+		relative_position_id = USA_reign_surveillance
+		prerequisite = {focus = USA_reign_surveillance}
+		available = {
+			
+		}
+		bypass = { 
+			has_country_flag = usa_supreme_court_appointed 
+		}
+		completion_reward = {
+			#Placeholder need event
+		}
+	}
+	focus = {
+		id = USA_we_are_the_99
+		x = 6
+		y = 1
+		icon = GFX_focus_USA_we_are_the_99
+		cost = 1
+		relative_position_id = USA_bernie_2016
+		prerequisite = {focus = USA_bernie_2016}
+		available = {
+			
+		}
+		completion_reward = {
+			add_dynamic_modifier = { modifier = all_american_labor }
+			set_variable = {
+				var = USA_AAL_cg
+				value = 0.02
+			}
+			set_variable = {
+				var = USA_AAL_cs
+				value = 0.05
+			}
+			set_variable = {
+				var = USA_AAL_infra_speed
+				value = 0
+			}
+			
+		}
+	}
+	focus = {
+		id = USA_close_loopholes
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_close_loopholes
+		cost = 5
+		relative_position_id = USA_we_are_the_99
+		prerequisite = {focus = USA_we_are_the_99}
+		available = {
+			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = social_democracy
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = USA_wrangle_wall_street
+		x = 0
+		y = 1
+		icon = GFX_focus_USA_wrangle_wallstreet
+		cost = 5
+		relative_position_id = USA_close_loopholes
+		prerequisite = {focus = USA_close_loopholes}
+		available = {
+			
+		}
+		completion_reward = {
+			add_to_variable = {
+				var = USA_AAL_infra_speed
+				value = 0.02
+			}
+			add_to_variable = {
+				var = USA_AAL_cs
+				value = 0.05
+			}
+		}
+	}
+	focus = {
+		id = USA_rebuild_america_act
+		x = 2
+		y = 1
+		icon = GFX_focus_USA_rebuild_america_act
+		cost = 5
+		relative_position_id = USA_close_loopholes
+		prerequisite = {focus = USA_close_loopholes}
+		available = {
+			
+		}
+		completion_reward = {
+			add_to_variable = {
+				var = USA_AAL_infra_speed
+				value = 0.15
+			}
 		}
 	}
 }
