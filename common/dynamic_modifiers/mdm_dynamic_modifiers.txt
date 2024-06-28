@@ -1,7 +1,7 @@
 all_american_economy = {
 	remove_trigger = { 
-		any_character = {
-			limit = {is_country_leader}
+		all_character = {
+			limit={is_country_leader}
 			NOT = {
 				has_ideology_group = conservatism
 				has_ideology_group = nationalism
@@ -35,4 +35,20 @@ audacity_hope = {
 	production_speed_buildings_factor = USA_AH_cs
 	stability_weekly_factor = USA_AH_wStab
 	liberalism_drift = USA_AH_wLib
+}
+
+all_american_labor = {
+	remove_trigger = { 
+		all_character = {
+			limit={is_country_leader}
+			NOT = {
+				has_ideology_group = social_democracy
+				has_ideology_group = socialism
+				has_ideology_group = liberalism
+			}
+		}
+	}
+	consumer_goods_factor = USA_AAL_cg
+	production_speed_buildings_factor = USA_AAL_cs
+	production_speed_infrastructure_factor = USA_AAL_infra_speed
 }
