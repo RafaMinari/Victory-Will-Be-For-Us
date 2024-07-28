@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	spriteType = {
+        name = GFX_ideology_authoritarianism_group 
+        texturefile = gfx/interface/ideologies/authoritarianism_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_centrism_group 
+        texturefile = gfx/interface/ideologies/centrism_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_communism_group 
+        texturefile = gfx/interface/ideologies/communism_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_conservatism_group
+        texturefile = gfx/interface/ideologies/conservative_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_democratic_group
+        texturefile = gfx/interface/ideologies/democratic_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_fascism_group
+        texturefile = gfx/interface/ideologies/fascism_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_liberalism_group 
+        texturefile = gfx/interface/ideologies/liberalism_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_nationalism_group
+        texturefile = gfx/interface/ideologies/nationalist_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_neutrality_group
+        texturefile = gfx/interface/ideologies/neutrality_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_socdem_group 
+        texturefile = gfx/interface/ideologies/socdem_group.dds
+    }
+	spriteType = {
+        name = GFX_ideology_socialism_group 
+        texturefile = gfx/interface/ideologies/socialism_group.dds
+    }
+	
+}

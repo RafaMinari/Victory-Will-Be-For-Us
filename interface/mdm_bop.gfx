@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+        name = GFX_bop_bra_religious_coup
+        texturefile = gfx/interface/bop/bop_bra_religious_coup.png
+    }
+	spriteType = {
+        name = GFX_bop_bra_war_of_religion 
+        texturefile = gfx/interface/bop/bop_bra_war_of_religion.png
+    }
+	
+	
+}

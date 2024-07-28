@@ -135,6 +135,14 @@ spriteTypes = {
 		name = "GFX_portrait_BRA_Luiz_emperor"
 		texturefile = "gfx/leaders/BRA/Portrait_Brazil_LuizEmperor.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_Brazil_Aecio_Neves"
+		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Aecio_Neves.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Brazil_Joao_Campos"
+		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Joao_Campos.png"
+	}
 	
 	#Mexico
 	spriteType = {
