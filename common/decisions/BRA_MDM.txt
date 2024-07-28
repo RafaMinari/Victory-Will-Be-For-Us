@@ -1,0 +1,10 @@
+aecio_decisions_economy = {
+	make_jobs = {
+		icon = GFX_decision_gre_investment_decisions
+		days_re_enable = 30
+		cost = 0
+		complete_effect = {
+			
+		}
+	}
+}
