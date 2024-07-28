@@ -1,0 +1,23 @@
+bra_evangelical_bancada_decision_category = {
+	allowed = {
+		original_tag = BRA
+	}
+	visible = {
+		is_subject = no
+	}
+}
+aecio_decisions_economy = {
+	icon = generic_research #Placeholder
+	allowed = {
+		original_tag = BRA
+	}
+	visible = {
+		is_subject = no
+		has_country_leader = {
+			character = BRA_aecio_neves
+			ruling_only = yes
+		}
+		has_completed_focus = BRA_recover_the_economy
+	}
+}
+
