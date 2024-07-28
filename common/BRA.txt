@@ -1,0 +1,156 @@
+
+BRA_mdm_bop = {
+	initial_value = -0.0
+	left_side = BRA_mdm_bop_left_side	
+	right_side = BRA_mdm_bop_right_side	
+	decision_category = bra_evangelical_bancada_decision_category
+	range = {
+        id = bop_bra_normal_influence
+        min = -0.2
+        max = 0.2
+    }
+	side = {
+        id = BRA_mdm_bop_left_side
+        icon = GFX_bop_bra_war_of_religion
+        range = {
+            id = low_religious_influence
+            min = -0.5
+            max = -0.2
+            modifier = {
+                socialism_drift = 0.01
+                communism_drift = 0.01
+                nationalism_drift = 0.01
+                conservatism_drift = 0.01
+            }
+            on_activate = {
+                add_stability = -0.1
+            }
+            on_deactivate = {
+                add_stability = 0.1
+            }
+        }
+        range = {
+            id = lower_religious_influence
+            min = -0.8
+            max = -0.5
+            modifier = {
+                socialism_drift = 0.02
+                nationalism_drift = 0.01
+                neo_fascism_drift = 0.01
+                if = {
+                   limit =  {has_country_flag = abortion_allowed}
+                   monthly_population = -0.1
+                }
+            }
+            on_activate = {
+                add_stability = -0.2
+            }
+        }
+        range = {
+            id = religious_war
+            min = -1
+            max = -0.8
+            modifier = {
+              
+            }
+            on_activate = {
+               if = {
+                    limit = {
+                        any_character = {
+                            is_country_leader = yes
+                            OR = {
+                                has_ideology_group = socialism
+                                has_ideology_group = communism
+                                has_ideology_group = liberalism
+                                has_ideology_group = social_democracy
+                            }
+                           
+                        }    
+                    }
+                    set_capital = {
+                        state = 499
+                        remember_old_capital = yes
+                    }
+                    start_civil_war = {
+                        ideology = authoritarianism
+                        size = 0.4
+                        capital = 501
+                        states = {
+                            502 503 944 501 504 280 965 942 505
+                        }
+                        add_country_leader_role = {
+                            character = BRA_joao_campos
+                            promote_leader = yes
+                            country_leader = {
+                                ideology = theocracism
+                            }
+                        }
+                        set_cosmetic_tag = BRA_EVANGELICAL
+                    }
+               }
+               else = {
+                    add_stability = -0.8
+               }
+            }
+        }
+    }
+    side = {
+        id = BRA_mdm_bop_right_side
+        icon = GFX_bop_bra_religious_coup
+        range = {
+            id = medium_religious_influence
+            min = 0.2
+            max = 0.5
+            modifier = {
+                authoritarianism_drift = 0.01
+                nationalism_drift = 0.01
+                conservatism_drift = 0.01
+                monthly_population = 0.5
+                political_power_gain = -0.1
+            }
+            
+        }
+        range = {
+            id = high_religious_influence
+            min = 0.5
+            max = 0.8
+            modifier = {
+                authoritarianism_drift = 0.01
+                nationalism_drift = 0.01
+                conservatism_drift = 0.01
+                socialism_drift = -0.01
+                communism_drift = -0.01
+                monthly_population = 0.5
+                political_power_gain = -0.2
+            }
+            on_activate = {
+                add_stability = -0.2
+            }
+        }
+        range = {
+            id = religious_coup
+            min = 0.8
+            max = 1
+            modifier = {
+              
+            }
+            on_activate = {
+                set_politics = {
+                    ruling_party = authoritarianism
+                    elections_allowed = no
+                    long_name = BRA_theocracy_party
+                    name = BRA_theocracy_party
+                }
+                add_country_leader_role = {
+                    character = BRA_joao_campos
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = theocracism
+                    }
+                }
+                set_cosmetic_tag = BRA_EVANGELICAL
+            }
+        }
+    }
+}
+
